@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--VPlan Schüler-->
+        <scene sceneID="hNz-n2-bh7">
+            <objects>
+                <viewController title="VPlan Schüler" automaticallyAdjustsScrollViewInsets="NO" id="9pv-A4-QxB" customClass="FirstViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9QQ-uf-sMN"/>
+                        <viewControllerLayoutGuide type="bottom" id="dRI-d0-wAX"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oCQ-ZQ-zP2">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="mAl-0F-7aY"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Lnb-ka-sVQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Lnb-ka-sVQ" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="3L4-P5-y09"/>
+                            <constraint firstAttribute="bottom" secondItem="Lnb-ka-sVQ" secondAttribute="bottom" id="6DR-FX-dVW"/>
+                            <constraint firstItem="oCQ-ZQ-zP2" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" id="AFE-sg-gN1"/>
+                            <constraint firstItem="dRI-d0-wAX" firstAttribute="top" secondItem="oCQ-ZQ-zP2" secondAttribute="bottom" id="EsR-3w-rwB"/>
+                            <constraint firstItem="Lnb-ka-sVQ" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" id="PrB-Eo-OeT"/>
+                            <constraint firstAttribute="trailing" secondItem="oCQ-ZQ-zP2" secondAttribute="trailing" id="dFJ-39-2yb"/>
+                            <constraint firstItem="oCQ-ZQ-zP2" firstAttribute="top" secondItem="9QQ-uf-sMN" secondAttribute="bottom" id="kdG-k9-PuM"/>
+                            <constraint firstAttribute="trailing" secondItem="Lnb-ka-sVQ" secondAttribute="trailing" id="rNs-oe-SaK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VPlan Schüler" id="rAP-qj-5fd">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="Pao-Us-fEP">
+                            <rect key="frame" x="118" y="7" width="139" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Aktuell"/>
+                                <segment title="Vorläufig"/>
+                            </segments>
+                            <connections>
+                                <action selector="indexChanged:" destination="9pv-A4-QxB" eventType="valueChanged" id="0tm-GH-8XU"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activity" destination="Lnb-ka-sVQ" id="kb5-PK-Cnh"/>
+                        <outlet property="segmentedControl" destination="Pao-Us-fEP" id="zX0-Vu-4Y6"/>
+                        <outlet property="webView1" destination="oCQ-ZQ-zP2" id="Jde-HG-Ibb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="-298"/>
+        </scene>
+        <!--Speiseplan-->
+        <scene sceneID="UUE-qe-ms9">
+            <objects>
+                <viewController title="Speiseplan" automaticallyAdjustsScrollViewInsets="NO" id="I8n-SG-7MR" customClass="ThirdViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DdF-Hd-bxM"/>
+                        <viewControllerLayoutGuide type="bottom" id="dgw-qa-xQD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="m21-1g-I0y">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rVP-pG-2Y2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="I8n-SG-7MR" id="n03-If-NQ4"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qqE-UJ-4Kx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rVP-pG-2Y2" firstAttribute="top" secondItem="DdF-Hd-bxM" secondAttribute="bottom" id="4jN-8D-haj"/>
+                            <constraint firstAttribute="trailing" secondItem="rVP-pG-2Y2" secondAttribute="trailing" id="Han-TN-UO4"/>
+                            <constraint firstItem="qqE-UJ-4Kx" firstAttribute="top" secondItem="m21-1g-I0y" secondAttribute="top" id="Scz-sl-a75"/>
+                            <constraint firstItem="dgw-qa-xQD" firstAttribute="top" secondItem="rVP-pG-2Y2" secondAttribute="bottom" id="UkC-ek-Z10"/>
+                            <constraint firstItem="qqE-UJ-4Kx" firstAttribute="leading" secondItem="m21-1g-I0y" secondAttribute="leading" id="Zoz-fP-Vjn"/>
+                            <constraint firstAttribute="bottom" secondItem="qqE-UJ-4Kx" secondAttribute="bottom" id="kfu-23-frh"/>
+                            <constraint firstAttribute="trailing" secondItem="qqE-UJ-4Kx" secondAttribute="trailing" id="lNj-Fu-fVe"/>
+                            <constraint firstItem="rVP-pG-2Y2" firstAttribute="leading" secondItem="m21-1g-I0y" secondAttribute="leading" id="uRU-l9-Avd"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Speiseplan" image="speis1" id="qfo-nc-hch"/>
+                    <connections>
+                        <outlet property="activity" destination="qqE-UJ-4Kx" id="g1n-M8-f8G"/>
+                        <outlet property="webView3" destination="rVP-pG-2Y2" id="csV-Mt-WGG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLb-Uj-rnp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866" y="-295"/>
+        </scene>
+        <!--News-->
+        <scene sceneID="5oA-t5-7BZ">
+            <objects>
+                <viewController title="News" automaticallyAdjustsScrollViewInsets="NO" id="F6j-Q7-ZST" customClass="FifthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y6d-Bh-8NR"/>
+                        <viewControllerLayoutGuide type="bottom" id="m3f-b3-BNu"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6cZ-cw-ASU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PgM-KA-Dad">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="F6j-Q7-ZST" id="j1O-xA-dfJ"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="hlg-bR-yf7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="m3f-b3-BNu" firstAttribute="top" secondItem="PgM-KA-Dad" secondAttribute="bottom" id="2zK-ys-fgt"/>
+                            <constraint firstAttribute="trailing" secondItem="hlg-bR-yf7" secondAttribute="trailing" id="7YU-hl-Ph8"/>
+                            <constraint firstAttribute="bottom" secondItem="hlg-bR-yf7" secondAttribute="bottom" id="F3G-Lw-ZgP"/>
+                            <constraint firstItem="hlg-bR-yf7" firstAttribute="top" secondItem="6cZ-cw-ASU" secondAttribute="top" id="Hyt-vG-wTs"/>
+                            <constraint firstItem="PgM-KA-Dad" firstAttribute="top" secondItem="Y6d-Bh-8NR" secondAttribute="bottom" id="KRi-CP-i7N"/>
+                            <constraint firstAttribute="trailing" secondItem="PgM-KA-Dad" secondAttribute="trailing" id="QH2-5p-wyJ"/>
+                            <constraint firstItem="hlg-bR-yf7" firstAttribute="leading" secondItem="6cZ-cw-ASU" secondAttribute="leading" id="Y6i-Kc-saZ"/>
+                            <constraint firstItem="PgM-KA-Dad" firstAttribute="leading" secondItem="6cZ-cw-ASU" secondAttribute="leading" id="rbQ-4e-PNU"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="News" image="news" id="XA6-3h-N1b"/>
+                    <connections>
+                        <outlet property="activity" destination="hlg-bR-yf7" id="BoL-bM-FpX"/>
+                        <outlet property="webView5" destination="PgM-KA-Dad" id="hFZ-kU-LvU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N29-Mz-3e7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556" y="-294"/>
+        </scene>
+        <!--Öffnungszeiten-->
+        <scene sceneID="o15-v8-oSg">
+            <objects>
+                <viewController title="Öffnungszeiten" automaticallyAdjustsScrollViewInsets="NO" id="0Jv-NH-Ln6" customClass="SixthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EYu-oU-JUS"/>
+                        <viewControllerLayoutGuide type="bottom" id="cM9-U1-i1b"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="MA9-tY-TJJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ou6-WM-wqd">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="AA9-Bh-cEy"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Ou6-WM-wqd" secondAttribute="trailing" id="PmU-7O-r30"/>
+                            <constraint firstItem="Ou6-WM-wqd" firstAttribute="bottom" secondItem="cM9-U1-i1b" secondAttribute="top" id="mdN-ZG-4Kb"/>
+                            <constraint firstItem="Ou6-WM-wqd" firstAttribute="top" secondItem="EYu-oU-JUS" secondAttribute="bottom" id="zSl-AS-5VY"/>
+                            <constraint firstItem="Ou6-WM-wqd" firstAttribute="leading" secondItem="MA9-tY-TJJ" secondAttribute="leading" id="ze8-yX-exb"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Öffnungszeiten" image="open" id="92w-t4-6uR"/>
+                    <connections>
+                        <outlet property="webView6" destination="Ou6-WM-wqd" id="Msp-Zb-K8g"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ygx-W3-t7U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="-298"/>
+        </scene>
+        <!--Telefonbuch-->
+        <scene sceneID="0Ky-zD-edn">
+            <objects>
+                <viewController title="Telefonbuch" automaticallyAdjustsScrollViewInsets="NO" id="Z5M-CH-Hur" customClass="NinthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tyG-Be-br8"/>
+                        <viewControllerLayoutGuide type="bottom" id="ivF-cj-EW3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="35P-fB-CXM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRK-6V-4Op">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Z5M-CH-Hur" id="LEf-te-4p7"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eDm-pD-5sh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="eDm-pD-5sh" firstAttribute="top" secondItem="35P-fB-CXM" secondAttribute="top" id="EvJ-cY-qCw"/>
+                            <constraint firstItem="ivF-cj-EW3" firstAttribute="top" secondItem="bRK-6V-4Op" secondAttribute="bottom" id="EwH-mA-XYA"/>
+                            <constraint firstAttribute="trailing" secondItem="bRK-6V-4Op" secondAttribute="trailing" id="P4k-1Q-hhz"/>
+                            <constraint firstAttribute="bottom" secondItem="eDm-pD-5sh" secondAttribute="bottom" id="dPY-XP-ih2"/>
+                            <constraint firstAttribute="trailing" secondItem="eDm-pD-5sh" secondAttribute="trailing" id="tdF-bs-Nnk"/>
+                            <constraint firstItem="bRK-6V-4Op" firstAttribute="leading" secondItem="35P-fB-CXM" secondAttribute="leading" id="yAJ-IU-ocO"/>
+                            <constraint firstItem="eDm-pD-5sh" firstAttribute="leading" secondItem="35P-fB-CXM" secondAttribute="leading" id="yIE-tj-AzW"/>
+                            <constraint firstItem="bRK-6V-4Op" firstAttribute="top" secondItem="tyG-Be-br8" secondAttribute="bottom" id="zm4-XM-S2p"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Telefonbuch" image="tel" id="Igg-jz-MkV"/>
+                    <connections>
+                        <outlet property="activity" destination="eDm-pD-5sh" id="D0P-85-AoI"/>
+                        <outlet property="webView9" destination="bRK-6V-4Op" id="BHY-vw-22P"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="grf-Uq-MDi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4366" y="-294"/>
+        </scene>
+        <!--Kontakt-->
+        <scene sceneID="KHm-xz-ePA">
+            <objects>
+                <viewController title="Kontakt" automaticallyAdjustsScrollViewInsets="NO" id="cna-8m-nuo" customClass="EleventhViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Qd-jP-Iz7"/>
+                        <viewControllerLayoutGuide type="bottom" id="WY0-6g-THz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qRH-aS-qxJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4Iw-J6-Mj2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="cna-8m-nuo" id="USJ-1Y-fRC"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Xnm-78-QE0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4Iw-J6-Mj2" secondAttribute="trailing" id="7mr-vo-fuP"/>
+                            <constraint firstItem="4Iw-J6-Mj2" firstAttribute="top" secondItem="2Qd-jP-Iz7" secondAttribute="bottom" id="B42-St-Qic"/>
+                            <constraint firstItem="Xnm-78-QE0" firstAttribute="top" secondItem="qRH-aS-qxJ" secondAttribute="top" id="Bzr-fc-dai"/>
+                            <constraint firstItem="WY0-6g-THz" firstAttribute="top" secondItem="4Iw-J6-Mj2" secondAttribute="bottom" id="UVP-pG-49c"/>
+                            <constraint firstItem="4Iw-J6-Mj2" firstAttribute="leading" secondItem="qRH-aS-qxJ" secondAttribute="leading" id="aNH-aR-uyD"/>
+                            <constraint firstAttribute="trailing" secondItem="Xnm-78-QE0" secondAttribute="trailing" id="bog-9l-pU4"/>
+                            <constraint firstItem="Xnm-78-QE0" firstAttribute="leading" secondItem="qRH-aS-qxJ" secondAttribute="leading" id="ewp-4c-otY"/>
+                            <constraint firstAttribute="bottom" secondItem="Xnm-78-QE0" secondAttribute="bottom" id="uQE-xs-AS6"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kontakt" image="kontakt" id="ASL-4H-y26"/>
+                    <connections>
+                        <outlet property="activity" destination="Xnm-78-QE0" id="TOb-wq-PF7"/>
+                        <outlet property="webView11" destination="4Iw-J6-Mj2" id="bvl-y5-hkJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y27-Xt-NEw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5274" y="-293"/>
+        </scene>
+        <!--Wegbeschreibung-->
+        <scene sceneID="HRf-QW-cCF">
+            <objects>
+                <viewController title="Wegbeschreibung" automaticallyAdjustsScrollViewInsets="NO" id="EDE-3l-cXV" customClass="TwelfthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BE7-aZ-TL8"/>
+                        <viewControllerLayoutGuide type="bottom" id="iHT-pR-QlN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qud-Yz-n0D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uzQ-ka-t8X">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="oPP-gh-duE"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uzQ-ka-t8X" firstAttribute="top" secondItem="BE7-aZ-TL8" secondAttribute="bottom" id="fbV-eL-jez"/>
+                            <constraint firstItem="uzQ-ka-t8X" firstAttribute="bottom" secondItem="iHT-pR-QlN" secondAttribute="top" id="tUz-I9-Nlb"/>
+                            <constraint firstAttribute="trailing" secondItem="uzQ-ka-t8X" secondAttribute="trailing" id="upt-R3-YlZ"/>
+                            <constraint firstItem="uzQ-ka-t8X" firstAttribute="leading" secondItem="Qud-Yz-n0D" secondAttribute="leading" id="zEU-Tc-8lR"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Wegbeschreibung" image="weg" id="Nov-cW-LkE"/>
+                    <connections>
+                        <outlet property="webView12" destination="uzQ-ka-t8X" id="pDh-7U-JZE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oVl-ga-mSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6102" y="-298"/>
+        </scene>
+        <!--Terminplan-->
+        <scene sceneID="6ed-d0-cyl">
+            <objects>
+                <viewController title="Terminplan" automaticallyAdjustsScrollViewInsets="NO" id="YrN-Rz-mdn" customClass="FourteenthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cKP-Xa-mOn"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kc2-k5-pwM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2aQ-a4-mIi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HfV-6a-aLS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="yjx-ol-AeE"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HfV-6a-aLS" firstAttribute="top" secondItem="cKP-Xa-mOn" secondAttribute="bottom" id="UVl-ML-gZA"/>
+                            <constraint firstAttribute="trailing" secondItem="HfV-6a-aLS" secondAttribute="trailing" id="ddj-71-Vfh"/>
+                            <constraint firstItem="Kc2-k5-pwM" firstAttribute="top" secondItem="HfV-6a-aLS" secondAttribute="bottom" id="gwc-cY-0KJ"/>
+                            <constraint firstItem="HfV-6a-aLS" firstAttribute="leading" secondItem="2aQ-a4-mIi" secondAttribute="leading" id="ua9-mE-ljk"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Terminplan" image="terminplan" id="M4l-mQ-YWS"/>
+                    <connections>
+                        <outlet property="webView14" destination="HfV-6a-aLS" id="T3n-as-GnC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jps-Cd-bCa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6961" y="-298"/>
+        </scene>
+        <!--VPlan Lehrer-->
+        <scene sceneID="wg7-f3-ORb">
+            <objects>
+                <viewController title="VPlan Lehrer" automaticallyAdjustsScrollViewInsets="NO" id="8rJ-Kc-sve" customClass="SecondViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="buu-iz-tmf"/>
+                        <viewControllerLayoutGuide type="bottom" id="xeW-II-fS2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Klm-Pc-4wj">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="8rJ-Kc-sve" id="U5R-RM-eK1"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="9U5-yZ-3XK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Klm-Pc-4wj" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="5fN-fI-kcZ"/>
+                            <constraint firstItem="9U5-yZ-3XK" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="Aub-ug-oQ0"/>
+                            <constraint firstAttribute="trailing" secondItem="Klm-Pc-4wj" secondAttribute="trailing" id="ElP-5s-XTL"/>
+                            <constraint firstAttribute="bottom" secondItem="9U5-yZ-3XK" secondAttribute="bottom" id="Ros-DA-01u"/>
+                            <constraint firstItem="xeW-II-fS2" firstAttribute="top" secondItem="Klm-Pc-4wj" secondAttribute="bottom" id="VQF-dv-B5J"/>
+                            <constraint firstItem="9U5-yZ-3XK" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="Zta-3C-f0P"/>
+                            <constraint firstAttribute="trailing" secondItem="9U5-yZ-3XK" secondAttribute="trailing" id="m7e-Lp-JbD"/>
+                            <constraint firstItem="Klm-Pc-4wj" firstAttribute="top" secondItem="buu-iz-tmf" secondAttribute="bottom" id="nXw-hg-e7x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="VPlan Lehrer" id="Vjk-DP-B1z">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="FJk-Of-owY">
+                            <rect key="frame" x="118" y="7" width="139" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segments>
+                                <segment title="Aktuell"/>
+                                <segment title="Vorläufig"/>
+                            </segments>
+                            <connections>
+                                <action selector="indexChanged:" destination="8rJ-Kc-sve" eventType="valueChanged" id="5Xp-mQ-eeM"/>
+                            </connections>
+                        </segmentedControl>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activity" destination="9U5-yZ-3XK" id="Mue-bK-D5I"/>
+                        <outlet property="segmentedControl" destination="FJk-Of-owY" id="ka6-0f-EnL"/>
+                        <outlet property="webView2" destination="Klm-Pc-4wj" id="a5G-Zt-evR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1156" y="385"/>
+        </scene>
+        <!--Vegetarisch-->
+        <scene sceneID="T7K-ro-l2a">
+            <objects>
+                <viewController title="Vegetarisch" automaticallyAdjustsScrollViewInsets="NO" id="if7-Kh-cT4" customClass="FourthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hs5-xt-0il"/>
+                        <viewControllerLayoutGuide type="bottom" id="22j-3o-hFS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NS2-aF-Dv6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mTd-8e-NnO">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="if7-Kh-cT4" id="OZR-iZ-cQE"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="B7E-ag-4Bu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="B7E-ag-4Bu" firstAttribute="top" secondItem="NS2-aF-Dv6" secondAttribute="top" id="4rE-wD-wp6"/>
+                            <constraint firstAttribute="trailing" secondItem="B7E-ag-4Bu" secondAttribute="trailing" id="KEf-QA-qXW"/>
+                            <constraint firstItem="B7E-ag-4Bu" firstAttribute="leading" secondItem="NS2-aF-Dv6" secondAttribute="leading" id="MAi-1v-yXz"/>
+                            <constraint firstAttribute="trailing" secondItem="mTd-8e-NnO" secondAttribute="trailing" id="MOf-7m-XyT"/>
+                            <constraint firstItem="22j-3o-hFS" firstAttribute="top" secondItem="mTd-8e-NnO" secondAttribute="bottom" id="cXu-mg-eez"/>
+                            <constraint firstItem="mTd-8e-NnO" firstAttribute="leading" secondItem="NS2-aF-Dv6" secondAttribute="leading" id="dZX-pU-QC2"/>
+                            <constraint firstItem="mTd-8e-NnO" firstAttribute="top" secondItem="Hs5-xt-0il" secondAttribute="bottom" id="lQ0-Ib-WXI"/>
+                            <constraint firstAttribute="bottom" secondItem="B7E-ag-4Bu" secondAttribute="bottom" id="oXg-zn-uLA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Vegetarisch" image="speis2" id="OSh-ZE-HKa"/>
+                    <connections>
+                        <outlet property="activity" destination="B7E-ag-4Bu" id="oA0-Zw-KQ9"/>
+                        <outlet property="webView4" destination="mTd-8e-NnO" id="qOL-Qq-nhu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZfJ-hy-mAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1865" y="385"/>
+        </scene>
+        <!--Termine-->
+        <scene sceneID="dnZ-u4-P2Y">
+            <objects>
+                <viewController title="Termine" automaticallyAdjustsScrollViewInsets="NO" id="0K8-oz-Dnh" customClass="SeventhViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="blB-Ii-fm6"/>
+                        <viewControllerLayoutGuide type="bottom" id="5kB-LV-FyL"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xvT-Gy-duQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hft-v6-cay">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="0K8-oz-Dnh" id="QzC-38-s7p"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ntX-Ot-t6U">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="hft-v6-cay" secondAttribute="trailing" id="1oP-FP-UZ3"/>
+                            <constraint firstAttribute="bottom" secondItem="ntX-Ot-t6U" secondAttribute="bottom" id="80C-qd-76j"/>
+                            <constraint firstItem="ntX-Ot-t6U" firstAttribute="top" secondItem="xvT-Gy-duQ" secondAttribute="top" id="9QQ-Hb-VML"/>
+                            <constraint firstItem="hft-v6-cay" firstAttribute="leading" secondItem="xvT-Gy-duQ" secondAttribute="leading" id="E9X-1z-zs3"/>
+                            <constraint firstItem="ntX-Ot-t6U" firstAttribute="leading" secondItem="xvT-Gy-duQ" secondAttribute="leading" id="I0w-nn-iDH"/>
+                            <constraint firstItem="hft-v6-cay" firstAttribute="top" secondItem="blB-Ii-fm6" secondAttribute="bottom" id="YGp-sk-ysB"/>
+                            <constraint firstAttribute="trailing" secondItem="ntX-Ot-t6U" secondAttribute="trailing" id="ZkL-dM-TCg"/>
+                            <constraint firstItem="5kB-LV-FyL" firstAttribute="top" secondItem="hft-v6-cay" secondAttribute="bottom" id="cte-vM-hZe"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Termine" image="termine" id="jBw-Ac-CPw"/>
+                    <connections>
+                        <outlet property="activity" destination="ntX-Ot-t6U" id="YCA-tp-lpA"/>
+                        <outlet property="webView7" destination="hft-v6-cay" id="wrS-SQ-Go6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Af7-gw-GWU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556" y="405"/>
+        </scene>
+        <!--Katalog-->
+        <scene sceneID="PLs-A6-6CE">
+            <objects>
+                <viewController title="Katalog" automaticallyAdjustsScrollViewInsets="NO" id="kRK-eb-wf8" customClass="EighthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="OX9-1I-m9F"/>
+                        <viewControllerLayoutGuide type="bottom" id="ACG-bv-XqI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vvd-ez-5vc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cb3-Jr-yTB">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="kRK-eb-wf8" id="8wF-bT-YFl"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-pf-Ud2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cb3-Jr-yTB" firstAttribute="leading" secondItem="Vvd-ez-5vc" secondAttribute="leading" id="1Z9-XQ-baV"/>
+                            <constraint firstAttribute="trailing" secondItem="Vaj-pf-Ud2" secondAttribute="trailing" id="5WZ-86-cjE"/>
+                            <constraint firstAttribute="trailing" secondItem="Cb3-Jr-yTB" secondAttribute="trailing" id="EhR-eD-unD"/>
+                            <constraint firstItem="Cb3-Jr-yTB" firstAttribute="top" secondItem="OX9-1I-m9F" secondAttribute="bottom" id="Gd8-a0-N9k"/>
+                            <constraint firstItem="Vaj-pf-Ud2" firstAttribute="leading" secondItem="Vvd-ez-5vc" secondAttribute="leading" id="UTq-HH-cGY"/>
+                            <constraint firstAttribute="bottom" secondItem="Vaj-pf-Ud2" secondAttribute="bottom" id="col-ZC-yD2"/>
+                            <constraint firstItem="Vaj-pf-Ud2" firstAttribute="top" secondItem="Vvd-ez-5vc" secondAttribute="top" id="ihp-js-ujf"/>
+                            <constraint firstItem="Cb3-Jr-yTB" firstAttribute="bottom" secondItem="ACG-bv-XqI" secondAttribute="top" id="luk-i7-ckg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Katalog" image="katalog" id="uZ8-n4-GTA"/>
+                    <connections>
+                        <outlet property="activity" destination="Vaj-pf-Ud2" id="CFI-hL-QHO"/>
+                        <outlet property="webView8" destination="Cb3-Jr-yTB" id="U7G-I3-nB0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b0P-f0-lUq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3465" y="385"/>
+        </scene>
+        <!--Newsletter-->
+        <scene sceneID="5Go-UU-XfK">
+            <objects>
+                <viewController title="Newsletter" automaticallyAdjustsScrollViewInsets="NO" id="84B-Jf-E4e" customClass="TenthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="CA5-zN-Y3a"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hm1-Fx-f5e"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F2x-CV-x8N">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TbJ-P7-Xxe">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431372549019" green="0.38823529411764707" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="84B-Jf-E4e" id="9Qg-2I-q85"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="bxa-NU-GME">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TbJ-P7-Xxe" secondAttribute="trailing" id="7LN-Gs-BSK"/>
+                            <constraint firstItem="bxa-NU-GME" firstAttribute="top" secondItem="F2x-CV-x8N" secondAttribute="top" id="A8p-C8-jDN"/>
+                            <constraint firstItem="TbJ-P7-Xxe" firstAttribute="top" secondItem="CA5-zN-Y3a" secondAttribute="bottom" id="E4d-FL-yOd"/>
+                            <constraint firstItem="TbJ-P7-Xxe" firstAttribute="top" secondItem="CA5-zN-Y3a" secondAttribute="bottom" id="Grp-X7-H1l"/>
+                            <constraint firstItem="TbJ-P7-Xxe" firstAttribute="leading" secondItem="F2x-CV-x8N" secondAttribute="leading" id="HDy-kH-78G"/>
+                            <constraint firstAttribute="trailing" secondItem="bxa-NU-GME" secondAttribute="trailing" id="HHu-gj-Dh1"/>
+                            <constraint firstItem="Hm1-Fx-f5e" firstAttribute="top" secondItem="TbJ-P7-Xxe" secondAttribute="bottom" id="RWU-E9-hOJ"/>
+                            <constraint firstItem="bxa-NU-GME" firstAttribute="leading" secondItem="F2x-CV-x8N" secondAttribute="leading" id="cS8-QJ-IIj"/>
+                            <constraint firstItem="TbJ-P7-Xxe" firstAttribute="leading" secondItem="F2x-CV-x8N" secondAttribute="leading" id="kJL-Kk-X9u"/>
+                            <constraint firstItem="TbJ-P7-Xxe" firstAttribute="bottom" secondItem="Hm1-Fx-f5e" secondAttribute="top" id="rRe-By-Zse"/>
+                            <constraint firstAttribute="trailing" secondItem="TbJ-P7-Xxe" secondAttribute="trailing" id="vT0-kz-kFp"/>
+                            <constraint firstAttribute="bottom" secondItem="bxa-NU-GME" secondAttribute="bottom" id="wSb-SE-HV9"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Newsletter" image="newsletter" id="IqZ-l1-ntx"/>
+                    <connections>
+                        <outlet property="activity" destination="bxa-NU-GME" id="e4T-XT-MBM"/>
+                        <outlet property="webView10" destination="TbJ-P7-Xxe" id="T7s-z6-xVP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WOj-8W-C4O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4366" y="385"/>
+        </scene>
+        <!--Ferienordnung-->
+        <scene sceneID="TFT-7N-9se">
+            <objects>
+                <viewController title="Ferienordnung" automaticallyAdjustsScrollViewInsets="NO" id="JS0-hp-Oeb" customClass="ThirteenthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="gbd-gi-1Xk"/>
+                        <viewControllerLayoutGuide type="bottom" id="8qn-BR-4Le"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Har-9S-uNN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EUn-vY-OKg">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="QpU-JS-gXL"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="EUn-vY-OKg" firstAttribute="top" secondItem="gbd-gi-1Xk" secondAttribute="bottom" id="YtF-Oz-bxr"/>
+                            <constraint firstAttribute="trailing" secondItem="EUn-vY-OKg" secondAttribute="trailing" id="ZTw-xk-vM8"/>
+                            <constraint firstItem="8qn-BR-4Le" firstAttribute="top" secondItem="EUn-vY-OKg" secondAttribute="bottom" id="d6G-si-KQA"/>
+                            <constraint firstItem="EUn-vY-OKg" firstAttribute="leading" secondItem="Har-9S-uNN" secondAttribute="leading" id="qbV-qm-36r"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Ferienordnung" image="ferien" id="Mbb-MB-sKv"/>
+                    <connections>
+                        <outlet property="webView13" destination="EUn-vY-OKg" id="gvN-Ks-3Ur"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RnX-Pi-IQq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5273" y="386"/>
+        </scene>
+        <!--Mars von Zuhause-->
+        <scene sceneID="BaJ-hO-871">
+            <objects>
+                <viewController title="Mars von Zuhause" automaticallyAdjustsScrollViewInsets="NO" id="jWd-f7-3qO" customClass="FifteenViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4mM-bk-j26"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xt5-Ba-UFU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="led-MV-O0M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7i-1G-2ax">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="86t-ci-knH"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y7i-1G-2ax" firstAttribute="leading" secondItem="led-MV-O0M" secondAttribute="leading" id="5ss-jj-zuB"/>
+                            <constraint firstItem="Y7i-1G-2ax" firstAttribute="top" secondItem="4mM-bk-j26" secondAttribute="bottom" id="DsL-ZA-ijP"/>
+                            <constraint firstAttribute="trailing" secondItem="Y7i-1G-2ax" secondAttribute="trailing" id="Tsn-gk-IXX"/>
+                            <constraint firstItem="Xt5-Ba-UFU" firstAttribute="top" secondItem="Y7i-1G-2ax" secondAttribute="bottom" id="iNo-CD-au0"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Mars von Zuhause" image="mars" id="Jxl-m4-d1c"/>
+                    <connections>
+                        <outlet property="webView15" destination="Y7i-1G-2ax" id="fBs-Pj-hPs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N6Z-v5-W7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6102" y="459"/>
+        </scene>
+        <!--Über diese App-->
+        <scene sceneID="9R6-7X-581">
+            <objects>
+                <viewController title="Über diese App" automaticallyAdjustsScrollViewInsets="NO" id="lId-ci-wVz" customClass="SixteenViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eGS-tJ-zjb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2Q0-jU-W0Q"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kJt-nT-gKO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v9W-B5-BHF">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="lId-ci-wVz" id="8Sd-fA-UKS"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="3Em-z0-shu">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="3Em-z0-shu" secondAttribute="bottom" id="DzE-Yt-Ool"/>
+                            <constraint firstItem="v9W-B5-BHF" firstAttribute="leading" secondItem="kJt-nT-gKO" secondAttribute="leading" id="IRb-m0-vub"/>
+                            <constraint firstItem="v9W-B5-BHF" firstAttribute="top" secondItem="eGS-tJ-zjb" secondAttribute="bottom" id="JKA-PN-pIB"/>
+                            <constraint firstItem="3Em-z0-shu" firstAttribute="top" secondItem="kJt-nT-gKO" secondAttribute="top" id="W2y-kw-soV"/>
+                            <constraint firstItem="2Q0-jU-W0Q" firstAttribute="top" secondItem="v9W-B5-BHF" secondAttribute="bottom" id="WMo-97-OAW"/>
+                            <constraint firstAttribute="trailing" secondItem="v9W-B5-BHF" secondAttribute="trailing" id="Y6X-Pa-f1R"/>
+                            <constraint firstItem="3Em-z0-shu" firstAttribute="leading" secondItem="kJt-nT-gKO" secondAttribute="leading" id="Z3W-3k-eZw"/>
+                            <constraint firstAttribute="trailing" secondItem="3Em-z0-shu" secondAttribute="trailing" id="rv1-pc-mUg"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Über diese App" image="about" id="6bL-fr-gxt"/>
+                    <connections>
+                        <outlet property="activity" destination="3Em-z0-shu" id="0CA-Uv-6a0"/>
+                        <outlet property="webView16" destination="v9W-B5-BHF" id="nqk-Zc-FoZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="96p-7U-yWP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6961" y="460"/>
+        </scene>
+        <!--Neuigkeiten-->
+        <scene sceneID="Tjb-sp-tkE">
+            <objects>
+                <viewController title="Neuigkeiten" automaticallyAdjustsScrollViewInsets="NO" id="RxS-qD-7Om" customClass="SeventeenViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0MZ-mk-5FC"/>
+                        <viewControllerLayoutGuide type="bottom" id="fUB-6q-49t"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8HK-96-2vf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Yv2-z7-8j5">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="RxS-qD-7Om" id="rNT-a8-dxV"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="rot-bU-F2b">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="rot-bU-F2b" secondAttribute="bottom" id="5uQ-ge-ziu"/>
+                            <constraint firstItem="Yv2-z7-8j5" firstAttribute="top" secondItem="0MZ-mk-5FC" secondAttribute="bottom" id="LmQ-Uo-Dax"/>
+                            <constraint firstItem="Yv2-z7-8j5" firstAttribute="leading" secondItem="8HK-96-2vf" secondAttribute="leading" id="NRY-uT-Zck"/>
+                            <constraint firstItem="rot-bU-F2b" firstAttribute="leading" secondItem="8HK-96-2vf" secondAttribute="leading" id="Ze2-u3-H81"/>
+                            <constraint firstAttribute="trailing" secondItem="rot-bU-F2b" secondAttribute="trailing" id="cSa-26-pSQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Yv2-z7-8j5" secondAttribute="trailing" id="h0Z-5f-qCy"/>
+                            <constraint firstItem="rot-bU-F2b" firstAttribute="top" secondItem="8HK-96-2vf" secondAttribute="top" id="nnc-ho-gH8"/>
+                            <constraint firstItem="fUB-6q-49t" firstAttribute="top" secondItem="Yv2-z7-8j5" secondAttribute="bottom" id="s4i-5T-CcG"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Neuigkeiten" image="twitter" id="fKr-zK-ZE9"/>
+                    <connections>
+                        <outlet property="activity" destination="rot-bU-F2b" id="3Qo-OG-ftP"/>
+                        <outlet property="webView17" destination="Yv2-z7-8j5" id="0Yd-r6-7Ei"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFg-yc-21J" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842" y="753"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Bk9-fV-Sov" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
+                        <segue destination="llN-Zp-4iU" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="I8n-SG-7MR" kind="relationship" relationship="viewControllers" id="g5m-W4-TmA"/>
+                        <segue destination="if7-Kh-cT4" kind="relationship" relationship="viewControllers" id="td4-gD-yqf"/>
+                        <segue destination="F6j-Q7-ZST" kind="relationship" relationship="viewControllers" id="pcg-QU-WhT"/>
+                        <segue destination="0K8-oz-Dnh" kind="relationship" relationship="viewControllers" id="ahj-fk-RP7"/>
+                        <segue destination="0Jv-NH-Ln6" kind="relationship" relationship="viewControllers" id="2cP-Qu-LzX"/>
+                        <segue destination="kRK-eb-wf8" kind="relationship" relationship="viewControllers" id="Xt5-Ly-Dri"/>
+                        <segue destination="Z5M-CH-Hur" kind="relationship" relationship="viewControllers" id="A8h-uj-uqD"/>
+                        <segue destination="84B-Jf-E4e" kind="relationship" relationship="viewControllers" id="QP1-p5-9lP"/>
+                        <segue destination="cna-8m-nuo" kind="relationship" relationship="viewControllers" id="0lb-lb-tKr"/>
+                        <segue destination="EDE-3l-cXV" kind="relationship" relationship="viewControllers" id="pXe-mX-2mZ"/>
+                        <segue destination="JS0-hp-Oeb" kind="relationship" relationship="viewControllers" id="3Cp-IM-cYS"/>
+                        <segue destination="YrN-Rz-mdn" kind="relationship" relationship="viewControllers" id="WyD-RX-OTk"/>
+                        <segue destination="jWd-f7-3qO" kind="relationship" relationship="viewControllers" id="vY9-Ub-5v5"/>
+                        <segue destination="lId-ci-wVz" kind="relationship" relationship="viewControllers" id="9kB-uB-WO2"/>
+                        <segue destination="RxS-qD-7Om" kind="relationship" relationship="viewControllers" id="phf-Qf-OO1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="0.0"/>
+        </scene>
+        <!--VPlan Schüler-->
+        <scene sceneID="oKt-FF-tWO">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Bk9-fV-Sov" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="VPlan Schüler" image="vplan1" id="acW-dT-cKf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="McC-9V-HUt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9pv-A4-QxB" kind="relationship" relationship="rootViewController" id="GcE-Vi-CIc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yhh-e2-UZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2" y="-815"/>
+        </scene>
+        <!--VPlan Lehrer-->
+        <scene sceneID="Aww-il-FNj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="llN-Zp-4iU" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="VPlan Lehrer" image="vplan2" id="cPa-gy-q4n"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Me4-tt-yIo">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="rootViewController" id="doX-hb-1Ci"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jiu-tQ-9Hs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1" y="754"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="about" width="33" height="33"/>
+        <image name="ferien" width="33" height="33"/>
+        <image name="katalog" width="33" height="33"/>
+        <image name="kontakt" width="33" height="33"/>
+        <image name="mars" width="33" height="33"/>
+        <image name="news" width="33" height="33"/>
+        <image name="newsletter" width="33" height="33"/>
+        <image name="open" width="33" height="33"/>
+        <image name="speis1" width="33" height="33"/>
+        <image name="speis2" width="33" height="33"/>
+        <image name="tel" width="33" height="33"/>
+        <image name="termine" width="33" height="33"/>
+        <image name="terminplan" width="33" height="33"/>
+        <image name="twitter" width="30" height="30"/>
+        <image name="vplan1" width="33" height="33"/>
+        <image name="vplan2" width="33" height="33"/>
+        <image name="weg" width="33" height="33"/>
+    </resources>
+</document>
