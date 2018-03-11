@@ -11,6 +11,7 @@
 		2C0214361FD0D11A00C749F1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214351FD0D11A00C749F1 /* FourthViewController.swift */; };
 		2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */; };
 		2C2EC08D1FD3F6CF0094CC16 /* TwelfthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */; };
+		2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 2C4699B92055BDC9003FA3FB /* fabric.apikey */; };
 		2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C6186311FD680A100C8FCF1 /* Settings.bundle */; };
 		2C6186341FD6836D00C8FCF1 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */; };
 		2C75DF5F1FDBB8EF00AC1A41 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */; };
@@ -70,6 +71,8 @@
 		2C0214351FD0D11A00C749F1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenViewController.swift; sourceTree = "<group>"; };
 		2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelfthViewController.swift; sourceTree = "<group>"; };
+		2C4699B92055BDC9003FA3FB /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = "<group>"; };
+		2C4699BB2055BE47003FA3FB /* fabric.buildsecret */ = {isa = PBXFileReference; lastKnownFileType = text; path = fabric.buildsecret; sourceTree = "<group>"; };
 		2C6186311FD680A100C8FCF1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
@@ -169,6 +172,8 @@
 				2CA914C91FDC402900EC3B02 /* privacy.html */,
 				2CA310AF20405105008B25D2 /* links.html */,
 				2CC72DD61FE9CA27007F874E /* license.txt */,
+				2C4699B92055BDC9003FA3FB /* fabric.apikey */,
+				2C4699BB2055BE47003FA3FB /* fabric.buildsecret */,
 				2C98347C1FF306040099A977 /* Frameworks */,
 				12E9499D799EF81B14FB6D72 /* Pods */,
 			);
@@ -310,6 +315,7 @@
 				2CA914CB1FDC402A00EC3B02 /* privacy.html in Resources */,
 				2CCE94451FD4EB8D00335149 /* ferienordnung.pdf in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
+				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
 				2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */,
 				2CE3EBCB1FD64A2400DCE733 /* index.html in Resources */,
 			);
@@ -344,7 +350,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "./Fabric.framework/run 56570eeb4f20591e830dd4ce4fa4a2d1911c4b13 0c265cdf12aaebd7970bb43fe27018229b674a0d0ad9dc67d8d9d06c9f24fe25";
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics.\"\necho \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\necho \"available. This build is failing because at least one of these pieces of\"\necho \"information is missing.\"\necho \"\"\necho \"To fix the problem, create the following files and store the API key and\"\necho \"build secret, respectively, within those files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project then you must register with Crashlytics and\"\necho \"get your own API key and build secret.\"\n\n# Let the build fail\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\n\necho \"Uploading dSYM files to Crashlytics\"\n\"./Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
 		};
 		30035471A2B1E2F4C01156D5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
