@@ -21,7 +21,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        Fabric.with([Crashlytics.self])
+        do {
+            if let url = Bundle.main.url(forResource: "fabric.apikey", withExtension: nil) {
+                let key = try String(contentsOf: url, encoding: .utf8).trimmingCharacters(in: .whitespacesAndNewlines)
+                Crashlytics.start(withAPIKey: key)
+            }
+        } catch {
+            NSLog("Could not retrieve Crashlytics API key. Check that fabric.apikey exists, contains your Crashlytics API key, and is a member of the target")
+        }
         
         if let tabBarController = window?.rootViewController as? UITabBarController {            
             tabBarController.customizableViewControllers = nil
