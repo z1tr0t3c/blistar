@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C0214341FD0CDF800C749F1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */; };
 		2C0214361FD0D11A00C749F1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214351FD0D11A00C749F1 /* FourthViewController.swift */; };
+		2C02E6102075037700A56978 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C02E60F2075037700A56978 /* privacy.html */; };
 		2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */; };
 		2C2EC08D1FD3F6CF0094CC16 /* TwelfthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */; };
 		2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 2C4699B92055BDC9003FA3FB /* fabric.apikey */; };
@@ -32,7 +33,6 @@
 		2C9834801FF311C40099A977 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C98347F1FF311C40099A977 /* UserNotifications.framework */; };
 		2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9834821FF333520099A977 /* GoogleService-Info.plist */; };
 		2CA310B020405105008B25D2 /* links.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA310AF20405105008B25D2 /* links.html */; };
-		2CA914CB1FDC402A00EC3B02 /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA914C91FDC402900EC3B02 /* privacy.html */; };
 		2CA914CC1FDC402A00EC3B02 /* imprint.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA914CA1FDC402A00EC3B02 /* imprint.html */; };
 		2CC72DD71FE9CA28007F874E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CC72DD61FE9CA27007F874E /* license.txt */; };
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
@@ -69,6 +69,7 @@
 /* Begin PBXFileReference section */
 		2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		2C0214351FD0D11A00C749F1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		2C02E60F2075037700A56978 /* privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenViewController.swift; sourceTree = "<group>"; };
 		2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelfthViewController.swift; sourceTree = "<group>"; };
 		2C4699B92055BDC9003FA3FB /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = "<group>"; };
@@ -94,7 +95,6 @@
 		2C98347F1FF311C40099A977 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2C9834821FF333520099A977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2CA310AF20405105008B25D2 /* links.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = links.html; sourceTree = "<group>"; };
-		2CA914C91FDC402900EC3B02 /* privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
 		2CA914CA1FDC402A00EC3B02 /* imprint.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = imprint.html; sourceTree = "<group>"; };
 		2CC72DD61FE9CA27007F874E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
@@ -169,7 +169,7 @@
 				2CE3EBC71FD64A2300DCE733 /* index.html */,
 				2C9834791FF2E4F00099A977 /* faq.html */,
 				2CA914CA1FDC402A00EC3B02 /* imprint.html */,
-				2CA914C91FDC402900EC3B02 /* privacy.html */,
+				2C02E60F2075037700A56978 /* privacy.html */,
 				2CA310AF20405105008B25D2 /* links.html */,
 				2CC72DD61FE9CA27007F874E /* license.txt */,
 				2C4699B92055BDC9003FA3FB /* fabric.apikey */,
@@ -303,6 +303,7 @@
 				2CE3EBCA1FD64A2400DCE733 /* images in Resources */,
 				2CA310B020405105008B25D2 /* links.html in Resources */,
 				2C98347A1FF2E4F00099A977 /* faq.html in Resources */,
+				2C02E6102075037700A56978 /* privacy.html in Resources */,
 				2C933D1A1FD0E54F00290D4E /* opening.html in Resources */,
 				2CF4E7A61FCFCF2300B29B8D /* blista.png in Resources */,
 				2C84E6D31FD5135D00671FB3 /* marsvonzuhause.pdf in Resources */,
@@ -312,7 +313,6 @@
 				2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */,
 				2C91476F200178AA00F6820C /* wegbeschreibung.pdf in Resources */,
 				2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */,
-				2CA914CB1FDC402A00EC3B02 /* privacy.html in Resources */,
 				2CCE94451FD4EB8D00335149 /* ferienordnung.pdf in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
