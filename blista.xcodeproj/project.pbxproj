@@ -34,6 +34,7 @@
 		2C98347A1FF2E4F00099A977 /* faq.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C9834791FF2E4F00099A977 /* faq.html */; };
 		2C9834801FF311C40099A977 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C98347F1FF311C40099A977 /* UserNotifications.framework */; };
 		2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9834821FF333520099A977 /* GoogleService-Info.plist */; };
+		2C99089020BAE17E0013A8F7 /* NineteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */; };
 		2CA914CC1FDC402A00EC3B02 /* imprint.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA914CA1FDC402A00EC3B02 /* imprint.html */; };
 		2CC72DD71FE9CA28007F874E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CC72DD61FE9CA27007F874E /* license.txt */; };
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
@@ -97,6 +98,7 @@
 		2C98347B1FF2F55B0099A977 /* blista.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = blista.entitlements; sourceTree = "<group>"; };
 		2C98347F1FF311C40099A977 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2C9834821FF333520099A977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthViewController.swift; sourceTree = "<group>"; };
 		2CA914CA1FDC402A00EC3B02 /* imprint.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = imprint.html; sourceTree = "<group>"; };
 		2CC72DD61FE9CA27007F874E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */,
 				2CEB825B1FE59B240013940A /* SeventeenthViewController.swift */,
 				2C3B6AF020AAFF93002A3F5A /* EighteenthViewController.swift */,
+				2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */,
 				2C803AED1FD0904D007A518B /* Reachability.swift */,
 				2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */,
 				2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */,
@@ -239,7 +242,6 @@
 				2C75DF5C1FDBB88100AC1A41 /* ShellScript */,
 				2CEB82561FE590960013940A /* Embed Frameworks */,
 				492301B48223A5DE7B076723 /* [CP] Embed Pods Frameworks */,
-				23ADB16195624E7B13B76841 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,7 +259,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Falk Rismansanj";
 				TargetAttributes = {
 					2CF4E78D1FCFCB3F00B29B8D = {
@@ -327,21 +329,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		23ADB16195624E7B13B76841 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-blista/Pods-blista-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		2C75DF5C1FDBB88100AC1A41 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -404,6 +391,7 @@
 			files = (
 				2C0214361FD0D11A00C749F1 /* FourthViewController.swift in Sources */,
 				2CE3F4571FD3E85700265D7E /* EleventhViewController.swift in Sources */,
+				2C99089020BAE17E0013A8F7 /* NineteenthViewController.swift in Sources */,
 				2CEB825C1FE59B240013940A /* SeventeenthViewController.swift in Sources */,
 				2CF4E7961FCFCB3F00B29B8D /* SecondViewController.swift in Sources */,
 				2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */,
@@ -462,6 +450,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -469,6 +458,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -519,6 +509,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -526,6 +517,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
