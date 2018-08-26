@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -661,44 +661,6 @@
             </objects>
             <point key="canvasLocation" x="5273" y="386"/>
         </scene>
-        <!--Mars von Zuhause-->
-        <scene sceneID="BaJ-hO-871">
-            <objects>
-                <viewController title="Mars von Zuhause" automaticallyAdjustsScrollViewInsets="NO" id="jWd-f7-3qO" customClass="FifteenViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4mM-bk-j26"/>
-                        <viewControllerLayoutGuide type="bottom" id="Xt5-Ba-UFU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="led-MV-O0M">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y7i-1G-2ax">
-                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
-                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="9pv-A4-QxB" id="86t-ci-knH"/>
-                                </connections>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Y7i-1G-2ax" firstAttribute="leading" secondItem="led-MV-O0M" secondAttribute="leading" id="5ss-jj-zuB"/>
-                            <constraint firstItem="Y7i-1G-2ax" firstAttribute="top" secondItem="4mM-bk-j26" secondAttribute="bottom" id="DsL-ZA-ijP"/>
-                            <constraint firstAttribute="trailing" secondItem="Y7i-1G-2ax" secondAttribute="trailing" id="Tsn-gk-IXX"/>
-                            <constraint firstItem="Xt5-Ba-UFU" firstAttribute="top" secondItem="Y7i-1G-2ax" secondAttribute="bottom" id="iNo-CD-au0"/>
-                        </constraints>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Mars von Zuhause" image="mars" id="Jxl-m4-d1c"/>
-                    <connections>
-                        <outlet property="webView15" destination="Y7i-1G-2ax" id="fBs-Pj-hPs"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="N6Z-v5-W7b" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6102" y="459"/>
-        </scene>
         <!--Über diese App-->
         <scene sceneID="9R6-7X-581">
             <objects>
@@ -857,16 +819,18 @@
                         <segue destination="F6j-Q7-ZST" kind="relationship" relationship="viewControllers" id="pcg-QU-WhT"/>
                         <segue destination="0K8-oz-Dnh" kind="relationship" relationship="viewControllers" id="ahj-fk-RP7"/>
                         <segue destination="Adw-Od-dAW" kind="relationship" relationship="viewControllers" id="opq-Zg-HzX"/>
+                        <segue destination="QiJ-KH-Pbc" kind="relationship" relationship="viewControllers" id="reQ-Sw-Z1i"/>
                         <segue destination="0Jv-NH-Ln6" kind="relationship" relationship="viewControllers" id="2cP-Qu-LzX"/>
                         <segue destination="kRK-eb-wf8" kind="relationship" relationship="viewControllers" id="Xt5-Ly-Dri"/>
                         <segue destination="Z5M-CH-Hur" kind="relationship" relationship="viewControllers" id="A8h-uj-uqD"/>
                         <segue destination="Ocd-3f-nzJ" kind="relationship" relationship="viewControllers" id="S8U-dC-8QE"/>
+                        <segue destination="oAU-qL-dtg" kind="relationship" relationship="viewControllers" id="igV-Gd-myV"/>
                         <segue destination="84B-Jf-E4e" kind="relationship" relationship="viewControllers" id="QP1-p5-9lP"/>
                         <segue destination="cna-8m-nuo" kind="relationship" relationship="viewControllers" id="0lb-lb-tKr"/>
                         <segue destination="EDE-3l-cXV" kind="relationship" relationship="viewControllers" id="pXe-mX-2mZ"/>
                         <segue destination="JS0-hp-Oeb" kind="relationship" relationship="viewControllers" id="3Cp-IM-cYS"/>
                         <segue destination="YrN-Rz-mdn" kind="relationship" relationship="viewControllers" id="WyD-RX-OTk"/>
-                        <segue destination="jWd-f7-3qO" kind="relationship" relationship="viewControllers" id="vY9-Ub-5v5"/>
+                        <segue destination="2uH-Bt-NE0" kind="relationship" relationship="viewControllers" id="ThI-5W-roc"/>
                         <segue destination="lId-ci-wVz" kind="relationship" relationship="viewControllers" id="9kB-uB-WO2"/>
                         <segue destination="RxS-qD-7Om" kind="relationship" relationship="viewControllers" id="phf-Qf-OO1"/>
                     </connections>
@@ -960,24 +924,157 @@
             </objects>
             <point key="canvasLocation" x="-1" y="754"/>
         </scene>
+        <!--Benutzerverwaltung-->
+        <scene sceneID="UiB-7t-goC">
+            <objects>
+                <viewController title="Benutzerverwaltung" automaticallyAdjustsScrollViewInsets="NO" id="oAU-qL-dtg" customClass="TwentiethViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8fR-Hk-4AY"/>
+                        <viewControllerLayoutGuide type="bottom" id="Pjg-BJ-B5W"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="RVq-rV-UOu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7MU-MM-I18">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="oAU-qL-dtg" id="e1D-LA-dfg"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ErM-wf-aRb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="7MU-MM-I18" secondAttribute="trailing" id="7yY-nW-odM"/>
+                            <constraint firstItem="ErM-wf-aRb" firstAttribute="leading" secondItem="RVq-rV-UOu" secondAttribute="leading" id="Ser-TA-GCT"/>
+                            <constraint firstItem="Pjg-BJ-B5W" firstAttribute="top" secondItem="7MU-MM-I18" secondAttribute="bottom" id="UEQ-qS-0ur"/>
+                            <constraint firstAttribute="trailing" secondItem="ErM-wf-aRb" secondAttribute="trailing" id="Xs7-Td-L9U"/>
+                            <constraint firstItem="7MU-MM-I18" firstAttribute="leading" secondItem="RVq-rV-UOu" secondAttribute="leading" id="dzG-oS-6hh"/>
+                            <constraint firstAttribute="bottom" secondItem="ErM-wf-aRb" secondAttribute="bottom" id="iHA-6D-Egz"/>
+                            <constraint firstItem="7MU-MM-I18" firstAttribute="top" secondItem="8fR-Hk-4AY" secondAttribute="bottom" id="oYf-Bb-C0G"/>
+                            <constraint firstItem="ErM-wf-aRb" firstAttribute="top" secondItem="RVq-rV-UOu" secondAttribute="top" id="vjt-lQ-apY"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Benutzerverwaltung" image="user" id="08d-zX-vJd"/>
+                    <connections>
+                        <outlet property="activity" destination="ErM-wf-aRb" id="UPD-Zy-pjC"/>
+                        <outlet property="webView20" destination="7MU-MM-I18" id="5xF-TJ-nCQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="h3K-ur-UCT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842.39999999999998" y="-977.36131934032994"/>
+        </scene>
+        <!--IntraNet Anleitung-->
+        <scene sceneID="78I-VB-p1v">
+            <objects>
+                <viewController title="IntraNet Anleitung" automaticallyAdjustsScrollViewInsets="NO" id="2uH-Bt-NE0" customClass="TwentyonethViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="adq-xl-Ygp"/>
+                        <viewControllerLayoutGuide type="bottom" id="gkZ-Pf-bOD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1dN-7y-7hb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleAspectFit" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fC-0O-Y6U">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2uH-Bt-NE0" id="2h2-Ib-d7F"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gkZ-Pf-bOD" firstAttribute="top" secondItem="4fC-0O-Y6U" secondAttribute="bottom" id="BQ9-C3-V23"/>
+                            <constraint firstItem="4fC-0O-Y6U" firstAttribute="leading" secondItem="1dN-7y-7hb" secondAttribute="leading" id="CtU-ti-lUv"/>
+                            <constraint firstItem="4fC-0O-Y6U" firstAttribute="top" secondItem="adq-xl-Ygp" secondAttribute="bottom" id="iUW-Sw-NrU"/>
+                            <constraint firstAttribute="trailing" secondItem="4fC-0O-Y6U" secondAttribute="trailing" id="x3D-Jy-QsA"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="IntraNet Anleitung" image="intranet" id="dqz-iX-yHC"/>
+                    <connections>
+                        <outlet property="webView21" destination="4fC-0O-Y6U" id="Wmp-PX-dC7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUO-Ad-gr1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5273" y="386"/>
+        </scene>
+        <!--Kalender-->
+        <scene sceneID="ni2-8z-Slp">
+            <objects>
+                <viewController title="Kalender" automaticallyAdjustsScrollViewInsets="NO" id="QiJ-KH-Pbc" customClass="TwentysecondViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KLF-W5-pfi"/>
+                        <viewControllerLayoutGuide type="bottom" id="GJj-Oj-L0a"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZxG-EK-EhN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cvg-2G-N8L">
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES" calendarEvent="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="QiJ-KH-Pbc" id="FxO-QW-b7U"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="SNw-3v-ZPb">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="SNw-3v-ZPb" firstAttribute="leading" secondItem="ZxG-EK-EhN" secondAttribute="leading" id="26h-CN-0Nd"/>
+                            <constraint firstItem="GJj-Oj-L0a" firstAttribute="top" secondItem="Cvg-2G-N8L" secondAttribute="bottom" id="2yz-Zv-UCy"/>
+                            <constraint firstItem="SNw-3v-ZPb" firstAttribute="top" secondItem="ZxG-EK-EhN" secondAttribute="top" id="6Oa-Ju-rvK"/>
+                            <constraint firstAttribute="bottom" secondItem="SNw-3v-ZPb" secondAttribute="bottom" id="Gm2-pz-Wum"/>
+                            <constraint firstItem="Cvg-2G-N8L" firstAttribute="leading" secondItem="ZxG-EK-EhN" secondAttribute="leading" id="KAA-qu-GgN"/>
+                            <constraint firstItem="Cvg-2G-N8L" firstAttribute="top" secondItem="KLF-W5-pfi" secondAttribute="bottom" id="KPJ-UQ-cWT"/>
+                            <constraint firstAttribute="trailing" secondItem="Cvg-2G-N8L" secondAttribute="trailing" id="TVh-aE-KJ5"/>
+                            <constraint firstAttribute="trailing" secondItem="SNw-3v-ZPb" secondAttribute="trailing" id="mSF-2o-bmM"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Kalender" image="terminplan" id="EeB-aN-Asr"/>
+                    <connections>
+                        <outlet property="activity" destination="SNw-3v-ZPb" id="A1x-gf-zFc"/>
+                        <outlet property="webView22" destination="Cvg-2G-N8L" id="t2Z-3F-kbx"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gta-Is-LpD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-842.39999999999998" y="-977.36131934032994"/>
+        </scene>
     </scenes>
     <resources>
         <image name="about" width="33" height="33"/>
         <image name="ank" width="33" height="33"/>
         <image name="ferien" width="33" height="33"/>
+        <image name="intranet" width="33" height="33"/>
         <image name="katalog" width="33" height="33"/>
         <image name="kontakt" width="33" height="33"/>
-        <image name="mars" width="33" height="33"/>
         <image name="news" width="33" height="33"/>
         <image name="newsletter" width="33" height="33"/>
         <image name="open" width="33" height="33"/>
-        <image name="room" width="16" height="16"/>
+        <image name="room" width="33" height="33"/>
         <image name="speis1" width="33" height="33"/>
         <image name="speis2" width="33" height="33"/>
         <image name="tel" width="33" height="33"/>
         <image name="termine" width="33" height="33"/>
         <image name="terminplan" width="33" height="33"/>
         <image name="twitter" width="30" height="30"/>
+        <image name="user" width="33" height="33"/>
         <image name="vplan1" width="33" height="33"/>
         <image name="vplan2" width="33" height="33"/>
         <image name="weg" width="33" height="33"/>
