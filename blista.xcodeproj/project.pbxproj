@@ -12,6 +12,9 @@
 		2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */; };
 		2C280885211BC28F0062E975 /* TwentyonethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280884211BC28F0062E975 /* TwentyonethViewController.swift */; };
 		2C280887211BC2FE0062E975 /* TwentysecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */; };
+		2C2B2FC7213DA67600973A86 /* TwentyfourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B2FC5213DA67500973A86 /* TwentyfourthViewController.swift */; };
+		2C2B2FC8213DA67600973A86 /* TwentythirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */; };
+		2C2B2FCC213DB7D300973A86 /* sommerfestprogramm.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C2B2FCB213DB7D300973A86 /* sommerfestprogramm.pdf */; };
 		2C2EC08D1FD3F6CF0094CC16 /* TwelfthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */; };
 		2C3B6AF120AAFF93002A3F5A /* EighteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF020AAFF93002A3F5A /* EighteenthViewController.swift */; };
 		2C3B6AF520AB0DF9002A3F5A /* links.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF420AB0DF9002A3F5A /* links.html */; };
@@ -37,6 +40,9 @@
 		2CC72DD71FE9CA28007F874E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CC72DD61FE9CA27007F874E /* license.txt */; };
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
 		2CD575CB1FD3A3AC0060057D /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */; };
+		2CE16B91213D893300A45B80 /* ferienordnung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B90213D893200A45B80 /* ferienordnung.pdf */; };
+		2CE16B93213D894900A45B80 /* terminplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B92213D894900A45B80 /* terminplan.pdf */; };
+		2CE16B95213D895B00A45B80 /* intranet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B94213D895B00A45B80 /* intranet.pdf */; };
 		2CE3EBC91FD64A2400DCE733 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC51FD64A2300DCE733 /* assets */; };
 		2CE3EBCA1FD64A2400DCE733 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC61FD64A2300DCE733 /* images */; };
 		2CE3EBCB1FD64A2400DCE733 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC71FD64A2300DCE733 /* index.html */; };
@@ -72,6 +78,9 @@
 		2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenViewController.swift; sourceTree = "<group>"; };
 		2C280884211BC28F0062E975 /* TwentyonethViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyonethViewController.swift; sourceTree = "<group>"; };
 		2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysecondViewController.swift; sourceTree = "<group>"; };
+		2C2B2FC5213DA67500973A86 /* TwentyfourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwentyfourthViewController.swift; path = /Users/falk/Documents/Xcode/blista/blista/TwentyfourthViewController.swift; sourceTree = "<absolute>"; };
+		2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwentythirdViewController.swift; path = /Users/falk/Documents/Xcode/blista/blista/TwentythirdViewController.swift; sourceTree = "<absolute>"; };
+		2C2B2FCB213DB7D300973A86 /* sommerfestprogramm.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = sommerfestprogramm.pdf; sourceTree = "<group>"; };
 		2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelfthViewController.swift; sourceTree = "<group>"; };
 		2C3B6AF020AAFF93002A3F5A /* EighteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighteenthViewController.swift; sourceTree = "<group>"; };
 		2C3B6AF420AB0DF9002A3F5A /* links.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = links.html; sourceTree = "<group>"; };
@@ -99,6 +108,9 @@
 		2CC72DD61FE9CA27007F874E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
 		2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
+		2CE16B90213D893200A45B80 /* ferienordnung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ferienordnung.pdf; sourceTree = "<group>"; };
+		2CE16B92213D894900A45B80 /* terminplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = terminplan.pdf; sourceTree = "<group>"; };
+		2CE16B94213D895B00A45B80 /* intranet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = intranet.pdf; sourceTree = "<group>"; };
 		2CE3EBC51FD64A2300DCE733 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		2CE3EBC61FD64A2300DCE733 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		2CE3EBC71FD64A2300DCE733 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -160,7 +172,11 @@
 				2CF4E78F1FCFCB3F00B29B8D /* Products */,
 				2CF4E7A51FCFCF2300B29B8D /* blista.png */,
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
+				2CE16B90213D893200A45B80 /* ferienordnung.pdf */,
+				2CE16B92213D894900A45B80 /* terminplan.pdf */,
+				2CE16B94213D895B00A45B80 /* intranet.pdf */,
 				2C91476E200178AA00F6820C /* wegbeschreibung.pdf */,
+				2C2B2FCB213DB7D300973A86 /* sommerfestprogramm.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
 				2CE3EBC61FD64A2300DCE733 /* images */,
 				2CE3EBC71FD64A2300DCE733 /* index.html */,
@@ -210,6 +226,8 @@
 				2CF0A4D520F70374002E98A0 /* TwentiethViewController.swift */,
 				2C280884211BC28F0062E975 /* TwentyonethViewController.swift */,
 				2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */,
+				2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */,
+				2C2B2FC5213DA67500973A86 /* TwentyfourthViewController.swift */,
 				2C803AED1FD0904D007A518B /* Reachability.swift */,
 				2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */,
 				2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */,
@@ -303,15 +321,19 @@
 				2C3B6AF720AB244C002A3F5A /* privacy.html in Resources */,
 				2CF4E7A61FCFCF2300B29B8D /* blista.png in Resources */,
 				2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */,
+				2C2B2FCC213DB7D300973A86 /* sommerfestprogramm.pdf in Resources */,
 				2CF4E79E1FCFCB3F00B29B8D /* LaunchScreen.storyboard in Resources */,
 				2C3B6AF520AB0DF9002A3F5A /* links.html in Resources */,
 				2CE3EBC91FD64A2400DCE733 /* assets in Resources */,
+				2CE16B95213D895B00A45B80 /* intranet.pdf in Resources */,
 				2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */,
 				2C91476F200178AA00F6820C /* wegbeschreibung.pdf in Resources */,
+				2CE16B93213D894900A45B80 /* terminplan.pdf in Resources */,
 				2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */,
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
+				2CE16B91213D893300A45B80 /* ferienordnung.pdf in Resources */,
 				2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */,
 				2CE3EBCB1FD64A2400DCE733 /* index.html in Resources */,
 			);
@@ -389,7 +411,9 @@
 				2C933D1C1FD0EBA000290D4E /* SeventhViewController.swift in Sources */,
 				2C280885211BC28F0062E975 /* TwentyonethViewController.swift in Sources */,
 				2CF4E7921FCFCB3F00B29B8D /* AppDelegate.swift in Sources */,
+				2C2B2FC8213DA67600973A86 /* TwentythirdViewController.swift in Sources */,
 				2CD575CB1FD3A3AC0060057D /* TenthViewController.swift in Sources */,
+				2C2B2FC7213DA67600973A86 /* TwentyfourthViewController.swift in Sources */,
 				2C933D181FD0E18800290D4E /* SixthViewController.swift in Sources */,
 				2C6186341FD6836D00C8FCF1 /* SettingsBundleHelper.swift in Sources */,
 				2C89C3071FD0F4A400D65F3D /* EighthViewController.swift in Sources */,
