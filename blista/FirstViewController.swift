@@ -52,7 +52,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan1",
                                    customAttributes: [:])
             
-            webView1.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista/api/vplan/1/index.php")!))
+            webView1.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/resource/view.php?id=39")!))
             
         case .cellular:
             
@@ -61,7 +61,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan1",
                                    customAttributes: [:])
             
-            webView1.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista/api/vplan/1/index.php")!))
+            webView1.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/resource/view.php?id=39")!))
             
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
@@ -86,7 +86,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan1vorschau",
                                    customAttributes: [:])
             
-            webView1.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista/api/vplan/2/index.php")!))
+            webView1.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/resource/view.php?id=43")!))
             
         case .cellular:
             
@@ -95,7 +95,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan1vorschau",
                                    customAttributes: [:])
             
-            webView1.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista/api/vplan/2/index.php")!))
+            webView1.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/resource/view.php?id=43")!))
             
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
