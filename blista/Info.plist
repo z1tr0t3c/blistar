@@ -27,7 +27,7 @@
 			<string>de.zitrotec.blista</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>blista</string>
+				<string>blistar</string>
 			</array>
 		</dict>
 	</array>
