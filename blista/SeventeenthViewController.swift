@@ -24,20 +24,20 @@ class SeventeenViewController: UIViewController, UIWebViewDelegate {
         switch reachability.connection {
         case .wifi:
             
-            Answers.logContentView(withName: "@blistaApp",
-                                   contentType: "@blistaApp",
-                                   contentId: "@blistaapp",
+            Answers.logContentView(withName: "@blistarApp",
+                                   contentType: "@blistarApp",
+                                   contentId: "@blistarapp",
                                    customAttributes: [:])
             
-            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistaApp")!))
+            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistarApp")!))
         case .cellular:
             
-            Answers.logContentView(withName: "@blistaApp",
-                                   contentType: "@blistaApp",
-                                   contentId: "@blistaapp",
+            Answers.logContentView(withName: "@blistarApp",
+                                   contentType: "@blistarApp",
+                                   contentId: "@blistarapp",
                                    customAttributes: [:])
             
-            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistaApp")!))
+            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistarApp")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
@@ -59,20 +59,20 @@ class SeventeenViewController: UIViewController, UIWebViewDelegate {
         switch reachability.connection {
         case .wifi:
             
-            Answers.logContentView(withName: "@blistaApp",
-                                   contentType: "@blistaApp",
-                                   contentId: "@blistaapp",
+            Answers.logContentView(withName: "@blistarApp",
+                                   contentType: "@blistarApp",
+                                   contentId: "@blistarapp",
                                    customAttributes: [:])
             
-            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistaApp")!))
+            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistarApp")!))
         case .cellular:
             
-            Answers.logContentView(withName: "@blistaApp",
-                                   contentType: "@blistaApp",
-                                   contentId: "@blistaapp",
+            Answers.logContentView(withName: "@blistarApp",
+                                   contentType: "@blistarApp",
+                                   contentId: "@blistarapp",
                                    customAttributes: [:])
             
-            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistaApp")!))
+            webView17.loadRequest(URLRequest(url: URL(string: "https://mobile.twitter.com/BlistarApp")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()

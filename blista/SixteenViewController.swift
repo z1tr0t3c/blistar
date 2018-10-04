@@ -25,7 +25,7 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
         
         switch reachability.connection {
         case .wifi:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blista/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",
@@ -34,7 +34,7 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
             
             webView16.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista")!))
         case .cellular:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blista/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",
@@ -59,7 +59,7 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
         
         switch reachability.connection {
         case .wifi:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blista/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",
@@ -68,7 +68,7 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
             
             webView16.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista")!))
         case .cellular:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blista/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",

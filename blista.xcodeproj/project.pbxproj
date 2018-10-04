@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2C0214341FD0CDF800C749F1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */; };
 		2C0214361FD0D11A00C749F1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214351FD0D11A00C749F1 /* FourthViewController.swift */; };
+		2C05F51B21666374003D2D77 /* blista.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C05F51A21666374003D2D77 /* blista.png */; };
 		2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */; };
 		2C280885211BC28F0062E975 /* TwentyonethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280884211BC28F0062E975 /* TwentyonethViewController.swift */; };
 		2C280887211BC2FE0062E975 /* TwentysecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */; };
@@ -53,7 +54,6 @@
 		2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF4E7971FCFCB3F00B29B8D /* Main.storyboard */; };
 		2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF4E79A1FCFCB3F00B29B8D /* Assets.xcassets */; };
 		2CF4E79E1FCFCB3F00B29B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF4E79C1FCFCB3F00B29B8D /* LaunchScreen.storyboard */; };
-		2CF4E7A61FCFCF2300B29B8D /* blista.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CF4E7A51FCFCF2300B29B8D /* blista.png */; };
 		6CCC9469A0FA5D605CFEC151 /* Pods_blista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C3072079021858A999F7E6 /* Pods_blista.framework */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +73,7 @@
 /* Begin PBXFileReference section */
 		2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		2C0214351FD0D11A00C749F1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		2C05F51A21666374003D2D77 /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blista.png; path = ../../../Desktop/blista.png; sourceTree = "<group>"; };
 		2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenViewController.swift; sourceTree = "<group>"; };
 		2C280884211BC28F0062E975 /* TwentyonethViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyonethViewController.swift; sourceTree = "<group>"; };
 		2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysecondViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +122,6 @@
 		2CF4E79A1FCFCB3F00B29B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF4E79D1FCFCB3F00B29B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CF4E79F1FCFCB3F00B29B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2CF4E7A51FCFCF2300B29B8D /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blista.png; sourceTree = "<group>"; };
 		314F7AC8CC3CAE8D090F4A74 /* Pods-blista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blista.release.xcconfig"; path = "Pods/Target Support Files/Pods-blista/Pods-blista.release.xcconfig"; sourceTree = "<group>"; };
 		73C3072079021858A999F7E6 /* Pods_blista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BABC4AF472042067D130109 /* Pods-blista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blista.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blista/Pods-blista.debug.xcconfig"; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 				2C6186311FD680A100C8FCF1 /* Settings.bundle */,
 				2CF4E7901FCFCB3F00B29B8D /* blista */,
 				2CF4E78F1FCFCB3F00B29B8D /* Products */,
-				2CF4E7A51FCFCF2300B29B8D /* blista.png */,
+				2C05F51A21666374003D2D77 /* blista.png */,
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
 				2CE16B90213D893200A45B80 /* ferienordnung.pdf */,
 				2CE16B92213D894900A45B80 /* terminplan.pdf */,
@@ -313,7 +313,6 @@
 				2CE3EBCA1FD64A2400DCE733 /* images in Resources */,
 				2C98347A1FF2E4F00099A977 /* faq.html in Resources */,
 				2C3B6AF720AB244C002A3F5A /* privacy.html in Resources */,
-				2CF4E7A61FCFCF2300B29B8D /* blista.png in Resources */,
 				2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */,
 				2CF4E79E1FCFCB3F00B29B8D /* LaunchScreen.storyboard in Resources */,
 				2C3B6AF520AB0DF9002A3F5A /* links.html in Resources */,
@@ -323,6 +322,7 @@
 				2C91476F200178AA00F6820C /* wegbeschreibung.pdf in Resources */,
 				2CE16B93213D894900A45B80 /* terminplan.pdf in Resources */,
 				2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */,
+				2C05F51B21666374003D2D77 /* blista.png in Resources */,
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
