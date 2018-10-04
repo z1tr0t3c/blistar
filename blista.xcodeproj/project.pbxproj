@@ -40,7 +40,6 @@
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
 		2CD575CB1FD3A3AC0060057D /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */; };
 		2CE16B91213D893300A45B80 /* ferienordnung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B90213D893200A45B80 /* ferienordnung.pdf */; };
-		2CE16B93213D894900A45B80 /* terminplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B92213D894900A45B80 /* terminplan.pdf */; };
 		2CE16B95213D895B00A45B80 /* intranet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B94213D895B00A45B80 /* intranet.pdf */; };
 		2CE3EBC91FD64A2400DCE733 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC51FD64A2300DCE733 /* assets */; };
 		2CE3EBCA1FD64A2400DCE733 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC61FD64A2300DCE733 /* images */; };
@@ -74,6 +73,7 @@
 		2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		2C0214351FD0D11A00C749F1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		2C05F51A21666374003D2D77 /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blista.png; path = ../../../Desktop/blista.png; sourceTree = "<group>"; };
+		2C05F51C216682DF003D2D77 /* terminplan.doc */ = {isa = PBXFileReference; lastKnownFileType = file; path = terminplan.doc; sourceTree = "<group>"; };
 		2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenViewController.swift; sourceTree = "<group>"; };
 		2C280884211BC28F0062E975 /* TwentyonethViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyonethViewController.swift; sourceTree = "<group>"; };
 		2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysecondViewController.swift; sourceTree = "<group>"; };
@@ -106,7 +106,6 @@
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
 		2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
 		2CE16B90213D893200A45B80 /* ferienordnung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ferienordnung.pdf; sourceTree = "<group>"; };
-		2CE16B92213D894900A45B80 /* terminplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = terminplan.pdf; sourceTree = "<group>"; };
 		2CE16B94213D895B00A45B80 /* intranet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = intranet.pdf; sourceTree = "<group>"; };
 		2CE3EBC51FD64A2300DCE733 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		2CE3EBC61FD64A2300DCE733 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
@@ -169,7 +168,7 @@
 				2C05F51A21666374003D2D77 /* blista.png */,
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
 				2CE16B90213D893200A45B80 /* ferienordnung.pdf */,
-				2CE16B92213D894900A45B80 /* terminplan.pdf */,
+				2C05F51C216682DF003D2D77 /* terminplan.doc */,
 				2CE16B94213D895B00A45B80 /* intranet.pdf */,
 				2C91476E200178AA00F6820C /* wegbeschreibung.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
@@ -320,7 +319,6 @@
 				2CE16B95213D895B00A45B80 /* intranet.pdf in Resources */,
 				2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */,
 				2C91476F200178AA00F6820C /* wegbeschreibung.pdf in Resources */,
-				2CE16B93213D894900A45B80 /* terminplan.pdf in Resources */,
 				2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */,
 				2C05F51B21666374003D2D77 /* blista.png in Resources */,
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
