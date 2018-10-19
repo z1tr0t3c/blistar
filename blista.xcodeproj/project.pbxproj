@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C0214341FD0CDF800C749F1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */; };
 		2C0214361FD0D11A00C749F1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214351FD0D11A00C749F1 /* FourthViewController.swift */; };
-		2C05F51B21666374003D2D77 /* blista.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C05F51A21666374003D2D77 /* blista.png */; };
 		2C05F51E2166860E003D2D77 /* terminplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C05F51D2166860E003D2D77 /* terminplan.pdf */; };
 		2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */; };
 		2C280885211BC28F0062E975 /* TwentyonethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280884211BC28F0062E975 /* TwentyonethViewController.swift */; };
@@ -36,6 +35,7 @@
 		2C9834801FF311C40099A977 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C98347F1FF311C40099A977 /* UserNotifications.framework */; };
 		2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9834821FF333520099A977 /* GoogleService-Info.plist */; };
 		2C99089020BAE17E0013A8F7 /* NineteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */; };
+		2CA13EF12179FEEB006C4A7F /* blista.png in Resources */ = {isa = PBXBuildFile; fileRef = 2CA13EF02179FEEB006C4A7F /* blista.png */; };
 		2CA914CC1FDC402A00EC3B02 /* imprint.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA914CA1FDC402A00EC3B02 /* imprint.html */; };
 		2CC72DD71FE9CA28007F874E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CC72DD61FE9CA27007F874E /* license.txt */; };
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
@@ -73,7 +73,6 @@
 /* Begin PBXFileReference section */
 		2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		2C0214351FD0D11A00C749F1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		2C05F51A21666374003D2D77 /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = blista.png; path = ../../../Desktop/blista.png; sourceTree = "<group>"; };
 		2C05F51D2166860E003D2D77 /* terminplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = terminplan.pdf; sourceTree = "<group>"; };
 		2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenViewController.swift; sourceTree = "<group>"; };
 		2C280884211BC28F0062E975 /* TwentyonethViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyonethViewController.swift; sourceTree = "<group>"; };
@@ -102,6 +101,7 @@
 		2C98347F1FF311C40099A977 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2C9834821FF333520099A977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthViewController.swift; sourceTree = "<group>"; };
+		2CA13EF02179FEEB006C4A7F /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blista.png; sourceTree = "<group>"; };
 		2CA914CA1FDC402A00EC3B02 /* imprint.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = imprint.html; sourceTree = "<group>"; };
 		2CC72DD61FE9CA27007F874E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
@@ -166,7 +166,7 @@
 				2C6186311FD680A100C8FCF1 /* Settings.bundle */,
 				2CF4E7901FCFCB3F00B29B8D /* blista */,
 				2CF4E78F1FCFCB3F00B29B8D /* Products */,
-				2C05F51A21666374003D2D77 /* blista.png */,
+				2CA13EF02179FEEB006C4A7F /* blista.png */,
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
 				2CE16B90213D893200A45B80 /* ferienordnung.pdf */,
 				2C05F51D2166860E003D2D77 /* terminplan.pdf */,
@@ -313,6 +313,7 @@
 				2CE3EBCA1FD64A2400DCE733 /* images in Resources */,
 				2C98347A1FF2E4F00099A977 /* faq.html in Resources */,
 				2C3B6AF720AB244C002A3F5A /* privacy.html in Resources */,
+				2CA13EF12179FEEB006C4A7F /* blista.png in Resources */,
 				2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */,
 				2CF4E79E1FCFCB3F00B29B8D /* LaunchScreen.storyboard in Resources */,
 				2C3B6AF520AB0DF9002A3F5A /* links.html in Resources */,
@@ -321,7 +322,6 @@
 				2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */,
 				2C91476F200178AA00F6820C /* wegbeschreibung.pdf in Resources */,
 				2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */,
-				2C05F51B21666374003D2D77 /* blista.png in Resources */,
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
@@ -372,7 +372,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-blista/Pods-blista-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-blista/Pods-blista-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -385,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-blista/Pods-blista-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-blista/Pods-blista-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
