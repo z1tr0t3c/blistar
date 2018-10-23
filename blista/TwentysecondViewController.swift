@@ -29,7 +29,7 @@ class TwentysecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "educal",
                                    customAttributes: [:])
             
-            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming&course=3#maincontent")!))
+            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming#maincontent")!))
         case .cellular:
             
             Answers.logContentView(withName: "EDU-Kalender",
@@ -37,7 +37,7 @@ class TwentysecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "educal",
                                    customAttributes: [:])
             
-            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming&course=3#maincontent")!))
+            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming#maincontent")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
@@ -64,7 +64,7 @@ class TwentysecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "educal",
                                    customAttributes: [:])
             
-            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming&course=3#maincontent")!))
+            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming#maincontent")!))
         case .cellular:
             
             Answers.logContentView(withName: "EDU-Kalender",
@@ -72,7 +72,7 @@ class TwentysecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "educal",
                                    customAttributes: [:])
             
-            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming&course=3#maincontent")!))
+            webView22.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/calendar/view.php?view=upcoming#maincontent")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
