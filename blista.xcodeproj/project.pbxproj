@@ -26,6 +26,7 @@
 		2C75DF601FDBB8EF00AC1A41 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */; };
 		2C803AEE1FD0904D007A518B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803AED1FD0904D007A518B /* Reachability.swift */; };
 		2C819163217FB66C0052E7C0 /* blista.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C819162217FB66C0052E7C0 /* blista.png */; };
+		2C819165217FE2FB0052E7C0 /* wegbeschreibung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C819164217FE2FB0052E7C0 /* wegbeschreibung.pdf */; };
 		2C84E6CF1FD50E4800671FB3 /* FourteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84E6CE1FD50E4800671FB3 /* FourteenthViewController.swift */; };
 		2C89C3071FD0F4A400D65F3D /* EighthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89C3061FD0F4A400D65F3D /* EighthViewController.swift */; };
 		2C933D161FD0D8A000290D4E /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C933D151FD0D8A000290D4E /* FifthViewController.swift */; };
@@ -90,6 +91,7 @@
 		2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		2C803AED1FD0904D007A518B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2C819162217FB66C0052E7C0 /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blista.png; sourceTree = "<group>"; };
+		2C819164217FE2FB0052E7C0 /* wegbeschreibung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wegbeschreibung.pdf; sourceTree = "<group>"; };
 		2C84E6CE1FD50E4800671FB3 /* FourteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourteenthViewController.swift; sourceTree = "<group>"; };
 		2C89C3061FD0F4A400D65F3D /* EighthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthViewController.swift; sourceTree = "<group>"; };
 		2C933D151FD0D8A000290D4E /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 				2CE16B90213D893200A45B80 /* ferienordnung.pdf */,
 				2C05F51D2166860E003D2D77 /* terminplan.pdf */,
 				2CE16B94213D895B00A45B80 /* intranet.pdf */,
+				2C819164217FE2FB0052E7C0 /* wegbeschreibung.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
 				2CE3EBC61FD64A2300DCE733 /* images */,
 				2CE3EBC71FD64A2300DCE733 /* index.html */,
@@ -321,6 +324,7 @@
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
+				2C819165217FE2FB0052E7C0 /* wegbeschreibung.pdf in Resources */,
 				2C05F51E2166860E003D2D77 /* terminplan.pdf in Resources */,
 				2CE16B91213D893300A45B80 /* ferienordnung.pdf in Resources */,
 				2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */,
