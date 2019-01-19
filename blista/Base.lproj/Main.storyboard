@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -776,6 +776,7 @@
                         <segue destination="QiJ-KH-Pbc" kind="relationship" relationship="viewControllers" id="reQ-Sw-Z1i"/>
                         <segue destination="0Jv-NH-Ln6" kind="relationship" relationship="viewControllers" id="2cP-Qu-LzX"/>
                         <segue destination="kRK-eb-wf8" kind="relationship" relationship="viewControllers" id="Xt5-Ly-Dri"/>
+                        <segue destination="2uH-Bt-NE0" kind="relationship" relationship="viewControllers" id="ThI-5W-roc"/>
                         <segue destination="Ocd-3f-nzJ" kind="relationship" relationship="viewControllers" id="S8U-dC-8QE"/>
                         <segue destination="oAU-qL-dtg" kind="relationship" relationship="viewControllers" id="igV-Gd-myV"/>
                         <segue destination="84B-Jf-E4e" kind="relationship" relationship="viewControllers" id="QP1-p5-9lP"/>
@@ -783,7 +784,6 @@
                         <segue destination="EDE-3l-cXV" kind="relationship" relationship="viewControllers" id="pXe-mX-2mZ"/>
                         <segue destination="JS0-hp-Oeb" kind="relationship" relationship="viewControllers" id="3Cp-IM-cYS"/>
                         <segue destination="YrN-Rz-mdn" kind="relationship" relationship="viewControllers" id="WyD-RX-OTk"/>
-                        <segue destination="2uH-Bt-NE0" kind="relationship" relationship="viewControllers" id="ThI-5W-roc"/>
                         <segue destination="lId-ci-wVz" kind="relationship" relationship="viewControllers" id="9kB-uB-WO2"/>
                         <segue destination="RxS-qD-7Om" kind="relationship" relationship="viewControllers" id="phf-Qf-OO1"/>
                     </connections>
@@ -924,10 +924,10 @@
             </objects>
             <point key="canvasLocation" x="-842.39999999999998" y="-977.36131934032994"/>
         </scene>
-        <!--IntraNet Anleitung-->
+        <!--EDU-Dateiserver-->
         <scene sceneID="78I-VB-p1v">
             <objects>
-                <viewController title="IntraNet Anleitung" automaticallyAdjustsScrollViewInsets="NO" id="2uH-Bt-NE0" customClass="TwentyonethViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="EDU-Dateiserver" automaticallyAdjustsScrollViewInsets="NO" id="2uH-Bt-NE0" customClass="TwentyonethViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="adq-xl-Ygp"/>
                         <viewControllerLayoutGuide type="bottom" id="gkZ-Pf-bOD"/>
@@ -953,7 +953,7 @@
                             <constraint firstAttribute="trailing" secondItem="4fC-0O-Y6U" secondAttribute="trailing" id="x3D-Jy-QsA"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="IntraNet Anleitung" image="intranet" id="dqz-iX-yHC"/>
+                    <tabBarItem key="tabBarItem" title="EDU-Dateiserver" image="intranet" id="dqz-iX-yHC"/>
                     <connections>
                         <outlet property="webView21" destination="4fC-0O-Y6U" id="Wmp-PX-dC7"/>
                     </connections>
@@ -1058,25 +1058,25 @@
         </scene>
     </scenes>
     <resources>
-        <image name="about" width="33" height="33"/>
-        <image name="ags" width="33" height="33"/>
-        <image name="ank" width="33" height="33"/>
-        <image name="ferien" width="33" height="33"/>
-        <image name="intranet" width="33" height="33"/>
-        <image name="katalog" width="33" height="33"/>
-        <image name="kontakt" width="33" height="33"/>
-        <image name="news" width="33" height="33"/>
-        <image name="newsletter" width="33" height="33"/>
-        <image name="open" width="33" height="33"/>
-        <image name="room" width="33" height="33"/>
-        <image name="speis1" width="33" height="33"/>
-        <image name="speis2" width="33" height="33"/>
-        <image name="termine" width="33" height="33"/>
-        <image name="terminplan" width="33" height="33"/>
+        <image name="about" width="33.5" height="33.5"/>
+        <image name="ags" width="33.5" height="33.5"/>
+        <image name="ank" width="50.25" height="50.25"/>
+        <image name="ferien" width="33.5" height="33.5"/>
+        <image name="intranet" width="33.5" height="33.5"/>
+        <image name="katalog" width="33.5" height="33.5"/>
+        <image name="kontakt" width="33.5" height="33.5"/>
+        <image name="news" width="33.5" height="33.5"/>
+        <image name="newsletter" width="33.5" height="33.5"/>
+        <image name="open" width="33.5" height="33.5"/>
+        <image name="room" width="50.25" height="50.25"/>
+        <image name="speis1" width="33.5" height="33.5"/>
+        <image name="speis2" width="33.5" height="33.5"/>
+        <image name="termine" width="33.5" height="33.5"/>
+        <image name="terminplan" width="33.5" height="33.5"/>
         <image name="twitter" width="30" height="30"/>
-        <image name="user" width="33" height="33"/>
-        <image name="vplan1" width="33" height="33"/>
-        <image name="vplan2" width="33" height="33"/>
-        <image name="weg" width="33" height="33"/>
+        <image name="user" width="33.5" height="33.5"/>
+        <image name="vplan1" width="33.5" height="33.5"/>
+        <image name="vplan2" width="33.5" height="33.5"/>
+        <image name="weg" width="33.5" height="33.5"/>
     </resources>
 </document>

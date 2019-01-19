@@ -19,6 +19,9 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
         
         // Do any additional setup after loading the view, typically from a nib.
         
+        let rightBarButton = UIBarButtonItem(title: "Spenden", style: UIBarButtonItemStyle.plain, target: self, action: #selector(SixteenViewController.myRightSideBarButtonItemTapped(_:)))
+        self.navigationItem.rightBarButtonItem = rightBarButton
+        
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
         
         let reachability = Reachability()!
@@ -100,6 +103,17 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         activity.stopAnimating()
     }
+    
+    @objc func myRightSideBarButtonItemTapped(_ sender:UIBarButtonItem!)
+    {
+            let url = URL(string:"https://zitrotec.de/it-service/referenzen/blista/spenden")
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url!)
+            }
+        }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

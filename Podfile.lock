@@ -1,62 +1,64 @@
 PODS:
-  - Firebase/Core (5.10.0):
+  - Firebase/Core (5.15.0):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (= 5.2.0)
-  - Firebase/CoreOnly (5.10.0):
-    - FirebaseCore (= 5.1.5)
-  - Firebase/Messaging (5.10.0):
+    - FirebaseAnalytics (= 5.4.0)
+  - Firebase/CoreOnly (5.15.0):
+    - FirebaseCore (= 5.1.10)
+  - Firebase/Messaging (5.15.0):
     - Firebase/CoreOnly
-    - FirebaseMessaging (= 3.2.0)
-  - FirebaseAnalytics (5.2.0):
+    - FirebaseMessaging (= 3.2.2)
+  - FirebaseAnalytics (5.4.0):
     - FirebaseCore (~> 5.1)
-    - FirebaseInstanceID (~> 3.2)
-    - GoogleAppMeasurement (~> 5.2)
+    - FirebaseInstanceID (~> 3.3)
+    - GoogleAppMeasurement (= 5.4.0)
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
-  - FirebaseCore (5.1.5):
+  - FirebaseAnalyticsInterop (1.1.0)
+  - FirebaseCore (5.1.10):
     - GoogleUtilities/Logger (~> 5.2)
-  - FirebaseInstanceID (3.2.2):
+  - FirebaseInstanceID (3.3.0):
     - FirebaseCore (~> 5.1)
     - GoogleUtilities/Environment (~> 5.3)
     - GoogleUtilities/UserDefaults (~> 5.3)
-  - FirebaseMessaging (3.2.0):
-    - FirebaseCore (~> 5.0)
+  - FirebaseMessaging (3.2.2):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.1)
     - FirebaseInstanceID (~> 3.0)
     - GoogleUtilities/Environment (~> 5.2)
     - GoogleUtilities/Reachability (~> 5.2)
     - Protobuf (~> 3.1)
-  - GoogleAppMeasurement (5.2.0):
+  - GoogleAppMeasurement (5.4.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 5.2)
     - GoogleUtilities/MethodSwizzler (~> 5.2)
     - GoogleUtilities/Network (~> 5.2)
     - "GoogleUtilities/NSData+zlib (~> 5.2)"
     - nanopb (~> 0.3)
-  - GoogleUtilities/AppDelegateSwizzler (5.3.3):
+  - GoogleUtilities/AppDelegateSwizzler (5.3.7):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (5.3.3)
-  - GoogleUtilities/Logger (5.3.3):
+  - GoogleUtilities/Environment (5.3.7)
+  - GoogleUtilities/Logger (5.3.7):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (5.3.3):
+  - GoogleUtilities/MethodSwizzler (5.3.7):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (5.3.3):
+  - GoogleUtilities/Network (5.3.7):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (5.3.3)"
-  - GoogleUtilities/Reachability (5.3.3):
+  - "GoogleUtilities/NSData+zlib (5.3.7)"
+  - GoogleUtilities/Reachability (5.3.7):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (5.3.3):
+  - GoogleUtilities/UserDefaults (5.3.7):
     - GoogleUtilities/Logger
-  - nanopb (0.3.8):
-    - nanopb/decode (= 0.3.8)
-    - nanopb/encode (= 0.3.8)
-  - nanopb/decode (0.3.8)
-  - nanopb/encode (0.3.8)
+  - nanopb (0.3.901):
+    - nanopb/decode (= 0.3.901)
+    - nanopb/encode (= 0.3.901)
+  - nanopb/decode (0.3.901)
+  - nanopb/encode (0.3.901)
   - Protobuf (3.6.1)
 
 DEPENDENCIES:
@@ -67,6 +69,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Firebase
     - FirebaseAnalytics
+    - FirebaseAnalyticsInterop
     - FirebaseCore
     - FirebaseInstanceID
     - FirebaseMessaging
@@ -76,16 +79,17 @@ SPEC REPOS:
     - Protobuf
 
 SPEC CHECKSUMS:
-  Firebase: 6691d47562a780c26281ce8464518faafc90c610
-  FirebaseAnalytics: 831f1f127f4a75698e9875a87bf7e2668730d953
-  FirebaseCore: c6079de64c1a87000e52e9b408dddcadc901177f
-  FirebaseInstanceID: 78ba376fcd5b94c001f9999b2cbd3d1f1e56e78d
-  FirebaseMessaging: 000b32447b461b34b6b912b23ec11be20b503b5b
-  GoogleAppMeasurement: 2b3a023a61239c8d002e6e4fcf4abce8eddce0e0
-  GoogleUtilities: 8208aee3e97a1ae93d44c57e96c476a5a3b03f0a
-  nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
+  Firebase: 8bb9268bff82374f2cbaaabb143e725743c316ae
+  FirebaseAnalytics: c06f9d70577d79074214700a71fd5d39de5550fb
+  FirebaseAnalyticsInterop: e5f21be9af6548372e2f0815834ff909bff395a2
+  FirebaseCore: 35747502d9e8c6ee217385ad04446c7c2aaf9c5c
+  FirebaseInstanceID: e2fa4cb35ef5558c200f7f0ad8a53e212215f93e
+  FirebaseMessaging: b412996f6a09337d232bb3a6676ce4d1f353d024
+  GoogleAppMeasurement: 98b71f5e04142793729a5ef23e5b96651ff4b70f
+  GoogleUtilities: 111a012f4c3a29c9e7c954c082fafd6ee3c999c0
+  nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
   Protobuf: 1eb9700044745f00181c136ef21b8ff3ad5a0fd5
 
 PODFILE CHECKSUM: 520344186de1f29c76e02112d62a271448eeb812
 
-COCOAPODS: 1.6.0.beta.2
+COCOAPODS: 1.5.3

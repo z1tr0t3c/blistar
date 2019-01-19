@@ -346,7 +346,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics.\"\necho \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\necho \"available. This build is failing because at least one of these pieces of\"\necho \"information is missing.\"\necho \"\"\necho \"To fix the problem, create the following files and store the API key and\"\necho \"build secret, respectively, within those files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project then you must register with Crashlytics and\"\necho \"get your own API key and build secret.\"\n\n# Let the build fail\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\n\necho \"Uploading dSYM files to Crashlytics\"\n\"./Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"";
+			shellScript = "FABRIC_APIKEY_FILE=\"${SRCROOT}/fabric.apikey\"\nFABRIC_BUILDSECRET_FILE=\"${SRCROOT}/fabric.buildsecret\"\n\nif test ! -f \"$FABRIC_APIKEY_FILE\" -o ! -f \"$FABRIC_BUILDSECRET_FILE\"; then\necho \"This build wants to upload dSYM files to Crashlytics.\"\necho \"Uploading is possible only if a Fabric API key and a Fabric build secret are\"\necho \"available. This build is failing because at least one of these pieces of\"\necho \"information is missing.\"\necho \"\"\necho \"To fix the problem, create the following files and store the API key and\"\necho \"build secret, respectively, within those files:\"\necho \"\"\necho \"  $FABRIC_APIKEY_FILE\"\necho \"  $FABRIC_BUILDSECRET_FILE\"\necho \"\"\necho \"If you forked the project then you must register with Crashlytics and\"\necho \"get your own API key and build secret.\"\n\n# Let the build fail\nexit 1\nfi\n\nFABRIC_APIKEY=$(cat \"$FABRIC_APIKEY_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_APIKEY_FILE\"\nexit 1\nfi\n\nFABRIC_BUILDSECRET=$(cat \"$FABRIC_BUILDSECRET_FILE\")\nif test $? -ne 0; then\necho \"Cannot read $FABRIC_BUILDSECRET_FILE\"\nexit 1\nfi\n\n\necho \"Uploading dSYM files to Crashlytics\"\n\"./Fabric.framework/run\" \"$FABRIC_APIKEY\" \"$FABRIC_BUILDSECRET\"\n";
 		};
 		30035471A2B1E2F4C01156D5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -372,7 +372,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-blista/Pods-blista-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-blista/Pods-blista-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
@@ -385,7 +385,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-blista/Pods-blista-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-blista/Pods-blista-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
