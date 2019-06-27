@@ -15,6 +15,7 @@
 		2C280887211BC2FE0062E975 /* TwentysecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */; };
 		2C2B2FC8213DA67600973A86 /* TwentythirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */; };
 		2C2EC08D1FD3F6CF0094CC16 /* TwelfthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */; };
+		2C3AC44922C56D5500BCE8AB /* TwentyfourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3AC44822C56D5500BCE8AB /* TwentyfourthViewController.swift */; };
 		2C3B6AF120AAFF93002A3F5A /* EighteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF020AAFF93002A3F5A /* EighteenthViewController.swift */; };
 		2C3B6AF520AB0DF9002A3F5A /* links.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF420AB0DF9002A3F5A /* links.html */; };
 		2C3B6AF720AB244C002A3F5A /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF620AB244C002A3F5A /* privacy.html */; };
@@ -79,6 +80,7 @@
 		2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysecondViewController.swift; sourceTree = "<group>"; };
 		2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwentythirdViewController.swift; path = /Users/falk/Documents/Xcode/blista/blista/TwentythirdViewController.swift; sourceTree = "<absolute>"; };
 		2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelfthViewController.swift; sourceTree = "<group>"; };
+		2C3AC44822C56D5500BCE8AB /* TwentyfourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyfourthViewController.swift; sourceTree = "<group>"; };
 		2C3B6AF020AAFF93002A3F5A /* EighteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighteenthViewController.swift; sourceTree = "<group>"; };
 		2C3B6AF420AB0DF9002A3F5A /* links.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = links.html; sourceTree = "<group>"; };
 		2C3B6AF620AB244C002A3F5A /* privacy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = privacy.html; sourceTree = "<group>"; };
@@ -222,6 +224,7 @@
 				2C280884211BC28F0062E975 /* TwentyonethViewController.swift */,
 				2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */,
 				2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */,
+				2C3AC44822C56D5500BCE8AB /* TwentyfourthViewController.swift */,
 				2C803AED1FD0904D007A518B /* Reachability.swift */,
 				2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */,
 				2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */,
@@ -403,6 +406,7 @@
 				2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */,
 				2C933D1C1FD0EBA000290D4E /* SeventhViewController.swift in Sources */,
 				2C280885211BC28F0062E975 /* TwentyonethViewController.swift in Sources */,
+				2C3AC44922C56D5500BCE8AB /* TwentyfourthViewController.swift in Sources */,
 				2CF4E7921FCFCB3F00B29B8D /* AppDelegate.swift in Sources */,
 				2C2B2FC8213DA67600973A86 /* TwentythirdViewController.swift in Sources */,
 				2CD575CB1FD3A3AC0060057D /* TenthViewController.swift in Sources */,
