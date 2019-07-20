@@ -109,11 +109,33 @@ class SeventeenViewController: UIViewController, UIWebViewDelegate {
     {
         let url = URL(string:"https://zitrotec.de/nl")
         
-        if #available(iOS 10.0, *) {
-            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
-        } else {
-            UIApplication.shared.openURL(url!)
+        let reachability = Reachability()!
+        
+        switch reachability.connection {
+        case .wifi:
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url!)
+            }
+            
+        case .cellular:
+            
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(url!)
+            }
+            
+        case .none:
+            let alert = UIAlertView()
+            alert.title = "Du bist Offline"
+            alert.message = "Bitte stell eine Internetverbindung her, um diesen Inhalt anzuzeigen."
+            alert.addButton(withTitle: "OK")
+            alert.show()
         }
+        
     }
     
     

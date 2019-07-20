@@ -21,13 +21,14 @@
 		2C3B6AF720AB244C002A3F5A /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF620AB244C002A3F5A /* privacy.html */; };
 		2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF820AB2C5D002A3F5A /* opening.html */; };
 		2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 2C4699B92055BDC9003FA3FB /* fabric.apikey */; };
+		2C5FA11F22CE43D8009145AB /* wegbeschreibung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */; };
+		2C5FA12122CE4916009145AB /* intranet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FA12022CE4916009145AB /* intranet.pdf */; };
 		2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C6186311FD680A100C8FCF1 /* Settings.bundle */; };
 		2C6186341FD6836D00C8FCF1 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */; };
 		2C75DF5F1FDBB8EF00AC1A41 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */; };
 		2C75DF601FDBB8EF00AC1A41 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */; };
 		2C803AEE1FD0904D007A518B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803AED1FD0904D007A518B /* Reachability.swift */; };
 		2C819163217FB66C0052E7C0 /* blista.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C819162217FB66C0052E7C0 /* blista.png */; };
-		2C819165217FE2FB0052E7C0 /* wegbeschreibung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C819164217FE2FB0052E7C0 /* wegbeschreibung.pdf */; };
 		2C84E6CF1FD50E4800671FB3 /* FourteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84E6CE1FD50E4800671FB3 /* FourteenthViewController.swift */; };
 		2C89C3071FD0F4A400D65F3D /* EighthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89C3061FD0F4A400D65F3D /* EighthViewController.swift */; };
 		2C933D161FD0D8A000290D4E /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C933D151FD0D8A000290D4E /* FifthViewController.swift */; };
@@ -42,7 +43,6 @@
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
 		2CD575CB1FD3A3AC0060057D /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */; };
 		2CE16B91213D893300A45B80 /* ferienordnung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B90213D893200A45B80 /* ferienordnung.pdf */; };
-		2CE16B95213D895B00A45B80 /* intranet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CE16B94213D895B00A45B80 /* intranet.pdf */; };
 		2CE3EBC91FD64A2400DCE733 /* assets in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC51FD64A2300DCE733 /* assets */; };
 		2CE3EBCA1FD64A2400DCE733 /* images in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC61FD64A2300DCE733 /* images */; };
 		2CE3EBCB1FD64A2400DCE733 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CE3EBC71FD64A2300DCE733 /* index.html */; };
@@ -87,13 +87,14 @@
 		2C3B6AF820AB2C5D002A3F5A /* opening.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = opening.html; sourceTree = "<group>"; };
 		2C4699B92055BDC9003FA3FB /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = "<group>"; };
 		2C4699BB2055BE47003FA3FB /* fabric.buildsecret */ = {isa = PBXFileReference; lastKnownFileType = text; path = fabric.buildsecret; sourceTree = "<group>"; };
+		2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wegbeschreibung.pdf; sourceTree = "<group>"; };
+		2C5FA12022CE4916009145AB /* intranet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = intranet.pdf; sourceTree = "<group>"; };
 		2C6186311FD680A100C8FCF1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
 		2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		2C803AED1FD0904D007A518B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2C819162217FB66C0052E7C0 /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blista.png; sourceTree = "<group>"; };
-		2C819164217FE2FB0052E7C0 /* wegbeschreibung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wegbeschreibung.pdf; sourceTree = "<group>"; };
 		2C84E6CE1FD50E4800671FB3 /* FourteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourteenthViewController.swift; sourceTree = "<group>"; };
 		2C89C3061FD0F4A400D65F3D /* EighthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthViewController.swift; sourceTree = "<group>"; };
 		2C933D151FD0D8A000290D4E /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +110,6 @@
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
 		2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
 		2CE16B90213D893200A45B80 /* ferienordnung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ferienordnung.pdf; sourceTree = "<group>"; };
-		2CE16B94213D895B00A45B80 /* intranet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = intranet.pdf; sourceTree = "<group>"; };
 		2CE3EBC51FD64A2300DCE733 /* assets */ = {isa = PBXFileReference; lastKnownFileType = folder; path = assets; sourceTree = "<group>"; };
 		2CE3EBC61FD64A2300DCE733 /* images */ = {isa = PBXFileReference; lastKnownFileType = folder; path = images; sourceTree = "<group>"; };
 		2CE3EBC71FD64A2300DCE733 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
@@ -172,8 +172,8 @@
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
 				2CE16B90213D893200A45B80 /* ferienordnung.pdf */,
 				2C05F51D2166860E003D2D77 /* terminplan.pdf */,
-				2CE16B94213D895B00A45B80 /* intranet.pdf */,
-				2C819164217FE2FB0052E7C0 /* wegbeschreibung.pdf */,
+				2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */,
+				2C5FA12022CE4916009145AB /* intranet.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
 				2CE3EBC61FD64A2300DCE733 /* images */,
 				2CE3EBC71FD64A2300DCE733 /* index.html */,
@@ -321,13 +321,13 @@
 				2CF4E79E1FCFCB3F00B29B8D /* LaunchScreen.storyboard in Resources */,
 				2C3B6AF520AB0DF9002A3F5A /* links.html in Resources */,
 				2CE3EBC91FD64A2400DCE733 /* assets in Resources */,
-				2CE16B95213D895B00A45B80 /* intranet.pdf in Resources */,
+				2C5FA12122CE4916009145AB /* intranet.pdf in Resources */,
 				2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */,
 				2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */,
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
-				2C819165217FE2FB0052E7C0 /* wegbeschreibung.pdf in Resources */,
+				2C5FA11F22CE43D8009145AB /* wegbeschreibung.pdf in Resources */,
 				2C05F51E2166860E003D2D77 /* terminplan.pdf in Resources */,
 				2CE16B91213D893300A45B80 /* ferienordnung.pdf in Resources */,
 				2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */,
