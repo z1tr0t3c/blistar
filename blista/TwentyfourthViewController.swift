@@ -9,6 +9,8 @@
 import UIKit
 import Crashlytics
 
+private var viewHasLoaded = false
+
 class TwentyfourthViewController: UIViewController, UIWebViewDelegate {
     
     @IBOutlet weak var webView24: UIWebView!
@@ -63,16 +65,24 @@ class TwentyfourthViewController: UIViewController, UIWebViewDelegate {
                                    contentType: "Stundenplan",
                                    contentId: "stundenplan",
                                    customAttributes: [:])
-            
+            if viewHasLoaded == true {
+                return
+            } else {
             webView24.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/stundenplan/display.php")!))
+             }
+                
         case .cellular:
             
             Answers.logContentView(withName: "Stundenplan",
                                    contentType: "Stundenplan",
                                    contentId: "stundenplan",
                                    customAttributes: [:])
-            
+                if viewHasLoaded == true {
+                    return
+                } else {
             webView24.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/stundenplan/display.php")!))
+                     }
+        
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
@@ -95,6 +105,7 @@ class TwentyfourthViewController: UIViewController, UIWebViewDelegate {
     {
         UIApplication.shared.isNetworkActivityIndicatorVisible = false
         activity.stopAnimating()
+        viewHasLoaded = true
     }
     
     func webView(_ webView: UIWebView, didFailLoadWithError error: Error) {
