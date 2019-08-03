@@ -107,5 +107,24 @@ class TwentysecondViewController: UIViewController, UIWebViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
+    func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
+        if navigationType == UIWebViewNavigationType.linkClicked {
+            
+            if request.url!.absoluteString.range(of: "export_execute.php") != nil {
+                
+                if #available(iOS 10.0, *) {
+                    UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
+                } else {
+                    UIApplication.shared.openURL(request.url!)
+                }
+                
+                return true
+            } else {
+                
+                return true
+            }
+        }
+        return true
+    }
     
 }
