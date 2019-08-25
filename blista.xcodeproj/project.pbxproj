@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		2C0214341FD0CDF800C749F1 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */; };
 		2C0214361FD0D11A00C749F1 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C0214351FD0D11A00C749F1 /* FourthViewController.swift */; };
-		2C05F51E2166860E003D2D77 /* terminplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C05F51D2166860E003D2D77 /* terminplan.pdf */; };
 		2C065DFF1FD52A3500BE5F17 /* SixteenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */; };
 		2C280885211BC28F0062E975 /* TwentyonethViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280884211BC28F0062E975 /* TwentyonethViewController.swift */; };
 		2C280887211BC2FE0062E975 /* TwentysecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */; };
@@ -25,6 +24,7 @@
 		2C5FA12122CE4916009145AB /* intranet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FA12022CE4916009145AB /* intranet.pdf */; };
 		2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C6186311FD680A100C8FCF1 /* Settings.bundle */; };
 		2C6186341FD6836D00C8FCF1 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */; };
+		2C68E3992313339A0059B2CA /* terminplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C68E398231333990059B2CA /* terminplan.pdf */; };
 		2C75DF5F1FDBB8EF00AC1A41 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */; };
 		2C75DF601FDBB8EF00AC1A41 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */; };
 		2C803AEE1FD0904D007A518B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803AED1FD0904D007A518B /* Reachability.swift */; };
@@ -74,7 +74,6 @@
 /* Begin PBXFileReference section */
 		2C0214331FD0CDF800C749F1 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		2C0214351FD0D11A00C749F1 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
-		2C05F51D2166860E003D2D77 /* terminplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = terminplan.pdf; sourceTree = "<group>"; };
 		2C065DFE1FD52A3500BE5F17 /* SixteenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixteenViewController.swift; sourceTree = "<group>"; };
 		2C280884211BC28F0062E975 /* TwentyonethViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyonethViewController.swift; sourceTree = "<group>"; };
 		2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysecondViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		2C5FA12022CE4916009145AB /* intranet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = intranet.pdf; sourceTree = "<group>"; };
 		2C6186311FD680A100C8FCF1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
+		2C68E398231333990059B2CA /* terminplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = terminplan.pdf; sourceTree = "<group>"; };
 		2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		2C803AED1FD0904D007A518B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -171,7 +171,7 @@
 				2C819162217FB66C0052E7C0 /* blista.png */,
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
 				2CA8A6C822FF125100143060 /* ferienordnung.pdf */,
-				2C05F51D2166860E003D2D77 /* terminplan.pdf */,
+				2C68E398231333990059B2CA /* terminplan.pdf */,
 				2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */,
 				2C5FA12022CE4916009145AB /* intranet.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
@@ -328,8 +328,8 @@
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
+				2C68E3992313339A0059B2CA /* terminplan.pdf in Resources */,
 				2C5FA11F22CE43D8009145AB /* wegbeschreibung.pdf in Resources */,
-				2C05F51E2166860E003D2D77 /* terminplan.pdf in Resources */,
 				2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */,
 				2CE3EBCB1FD64A2400DCE733 /* index.html in Resources */,
 			);
