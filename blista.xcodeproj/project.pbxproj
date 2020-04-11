@@ -14,6 +14,7 @@
 		2C280887211BC2FE0062E975 /* TwentysecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */; };
 		2C2B2FC8213DA67600973A86 /* TwentythirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */; };
 		2C2EC08D1FD3F6CF0094CC16 /* TwelfthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */; };
+		2C31F3A024035ADE00FB2CDB /* mensa.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C31F39F24035ADD00FB2CDB /* mensa.pdf */; };
 		2C3AC44922C56D5500BCE8AB /* TwentyfourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3AC44822C56D5500BCE8AB /* TwentyfourthViewController.swift */; };
 		2C3B6AF120AAFF93002A3F5A /* EighteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF020AAFF93002A3F5A /* EighteenthViewController.swift */; };
 		2C3B6AF520AB0DF9002A3F5A /* links.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF420AB0DF9002A3F5A /* links.html */; };
@@ -55,6 +56,7 @@
 		2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF4E7971FCFCB3F00B29B8D /* Main.storyboard */; };
 		2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2CF4E79A1FCFCB3F00B29B8D /* Assets.xcassets */; };
 		2CF4E79E1FCFCB3F00B29B8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2CF4E79C1FCFCB3F00B29B8D /* LaunchScreen.storyboard */; };
+		2CFFA2C52401FFFE00CBE6F7 /* TwentyfifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CFFA2C42401FFFE00CBE6F7 /* TwentyfifthViewController.swift */; };
 		6CCC9469A0FA5D605CFEC151 /* Pods_blista.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73C3072079021858A999F7E6 /* Pods_blista.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +81,7 @@
 		2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysecondViewController.swift; sourceTree = "<group>"; };
 		2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TwentythirdViewController.swift; path = /Users/falk/Documents/Xcode/blista/blista/TwentythirdViewController.swift; sourceTree = "<absolute>"; };
 		2C2EC08C1FD3F6CF0094CC16 /* TwelfthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwelfthViewController.swift; sourceTree = "<group>"; };
+		2C31F39F24035ADD00FB2CDB /* mensa.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = mensa.pdf; sourceTree = "<group>"; };
 		2C3AC44822C56D5500BCE8AB /* TwentyfourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyfourthViewController.swift; sourceTree = "<group>"; };
 		2C3B6AF020AAFF93002A3F5A /* EighteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighteenthViewController.swift; sourceTree = "<group>"; };
 		2C3B6AF420AB0DF9002A3F5A /* links.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = links.html; sourceTree = "<group>"; };
@@ -124,6 +127,7 @@
 		2CF4E79A1FCFCB3F00B29B8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2CF4E79D1FCFCB3F00B29B8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2CF4E79F1FCFCB3F00B29B8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2CFFA2C42401FFFE00CBE6F7 /* TwentyfifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentyfifthViewController.swift; sourceTree = "<group>"; };
 		314F7AC8CC3CAE8D090F4A74 /* Pods-blista.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blista.release.xcconfig"; path = "Pods/Target Support Files/Pods-blista/Pods-blista.release.xcconfig"; sourceTree = "<group>"; };
 		73C3072079021858A999F7E6 /* Pods_blista.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_blista.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BABC4AF472042067D130109 /* Pods-blista.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-blista.debug.xcconfig"; path = "Pods/Target Support Files/Pods-blista/Pods-blista.debug.xcconfig"; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 				2C68E398231333990059B2CA /* terminplan.pdf */,
 				2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */,
 				2C5FA12022CE4916009145AB /* intranet.pdf */,
+				2C31F39F24035ADD00FB2CDB /* mensa.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
 				2CE3EBC61FD64A2300DCE733 /* images */,
 				2CE3EBC71FD64A2300DCE733 /* index.html */,
@@ -225,6 +230,7 @@
 				2C280886211BC2FE0062E975 /* TwentysecondViewController.swift */,
 				2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */,
 				2C3AC44822C56D5500BCE8AB /* TwentyfourthViewController.swift */,
+				2CFFA2C42401FFFE00CBE6F7 /* TwentyfifthViewController.swift */,
 				2C803AED1FD0904D007A518B /* Reachability.swift */,
 				2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */,
 				2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */,
@@ -315,6 +321,7 @@
 				2CA914CC1FDC402A00EC3B02 /* imprint.html in Resources */,
 				2CE3EBCA1FD64A2400DCE733 /* images in Resources */,
 				2C98347A1FF2E4F00099A977 /* faq.html in Resources */,
+				2C31F3A024035ADE00FB2CDB /* mensa.pdf in Resources */,
 				2C3B6AF720AB244C002A3F5A /* privacy.html in Resources */,
 				2C819163217FB66C0052E7C0 /* blista.png in Resources */,
 				2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */,
@@ -377,13 +384,17 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-blista/Pods-blista-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/Protobuf/protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCodeReader.swift/QRCodeReader.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCodeReader.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -423,6 +434,7 @@
 				2C2EC08D1FD3F6CF0094CC16 /* TwelfthViewController.swift in Sources */,
 				2CF4E7941FCFCB3F00B29B8D /* FirstViewController.swift in Sources */,
 				2C933D161FD0D8A000290D4E /* FifthViewController.swift in Sources */,
+				2CFFA2C52401FFFE00CBE6F7 /* TwentyfifthViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,7 +590,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.13.0;
+				MARKETING_VERSION = 1.14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -607,7 +619,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.13.0;
+				MARKETING_VERSION = 1.14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

@@ -9,5 +9,6 @@ target 'blista' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Messaging'
+pod 'QRCodeReader.swift', '~> 10.1.0'
 
 end
