@@ -40,6 +40,7 @@
 		2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9834821FF333520099A977 /* GoogleService-Info.plist */; };
 		2C99089020BAE17E0013A8F7 /* NineteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */; };
 		2CA914CC1FDC402A00EC3B02 /* imprint.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA914CA1FDC402A00EC3B02 /* imprint.html */; };
+		2CAAF1F9247094ED00E0C77D /* TwentysixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAAF1F8247094ED00E0C77D /* TwentysixthViewController.swift */; };
 		2CC72DD71FE9CA28007F874E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CC72DD61FE9CA27007F874E /* license.txt */; };
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
 		2CD575CB1FD3A3AC0060057D /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */; };
@@ -109,6 +110,7 @@
 		2C9834821FF333520099A977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthViewController.swift; sourceTree = "<group>"; };
 		2CA914CA1FDC402A00EC3B02 /* imprint.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = imprint.html; sourceTree = "<group>"; };
+		2CAAF1F8247094ED00E0C77D /* TwentysixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysixthViewController.swift; sourceTree = "<group>"; };
 		2CC72DD61FE9CA27007F874E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
 		2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 				2C2B2FC6213DA67500973A86 /* TwentythirdViewController.swift */,
 				2C3AC44822C56D5500BCE8AB /* TwentyfourthViewController.swift */,
 				2CFFA2C42401FFFE00CBE6F7 /* TwentyfifthViewController.swift */,
+				2CAAF1F8247094ED00E0C77D /* TwentysixthViewController.swift */,
 				2C803AED1FD0904D007A518B /* Reachability.swift */,
 				2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */,
 				2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */,
@@ -430,6 +433,7 @@
 				2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */,
 				2C280887211BC2FE0062E975 /* TwentysecondViewController.swift in Sources */,
 				2C803AEE1FD0904D007A518B /* Reachability.swift in Sources */,
+				2CAAF1F9247094ED00E0C77D /* TwentysixthViewController.swift in Sources */,
 				2C84E6CF1FD50E4800671FB3 /* FourteenthViewController.swift in Sources */,
 				2C2EC08D1FD3F6CF0094CC16 /* TwelfthViewController.swift in Sources */,
 				2CF4E7941FCFCB3F00B29B8D /* FirstViewController.swift in Sources */,
@@ -590,7 +594,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.14.1;
+				MARKETING_VERSION = 1.15.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -619,7 +623,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.14.1;
+				MARKETING_VERSION = 1.15.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

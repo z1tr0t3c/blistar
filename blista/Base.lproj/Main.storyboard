@@ -779,6 +779,7 @@
                         <segue destination="llN-Zp-4iU" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="I8n-SG-7MR" kind="relationship" relationship="viewControllers" id="g5m-W4-TmA"/>
                         <segue destination="if7-Kh-cT4" kind="relationship" relationship="viewControllers" id="td4-gD-yqf"/>
+                        <segue destination="N82-tg-lf0" kind="relationship" relationship="viewControllers" id="mDa-OI-hZl"/>
                         <segue destination="F6j-Q7-ZST" kind="relationship" relationship="viewControllers" id="pcg-QU-WhT"/>
                         <segue destination="0K8-oz-Dnh" kind="relationship" relationship="viewControllers" id="ahj-fk-RP7"/>
                         <segue destination="OaC-iV-C6A" kind="relationship" relationship="viewControllers" id="kR3-Yd-e7q"/>
@@ -1168,11 +1169,60 @@
             </objects>
             <point key="canvasLocation" x="-842" y="753"/>
         </scene>
+        <!--Corona-Infos-->
+        <scene sceneID="x96-oK-TdR">
+            <objects>
+                <viewController title="Corona-Infos" automaticallyAdjustsScrollViewInsets="NO" id="N82-tg-lf0" customClass="TwentysixthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Djf-bW-oAL"/>
+                        <viewControllerLayoutGuide type="bottom" id="SNz-5g-BcB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="F6e-Fb-wQ7">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r0R-kG-Slm">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="N82-tg-lf0" id="E8O-hA-33G"/>
+                                </connections>
+                            </webView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-S8-PFx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="color" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="r0R-kG-Slm" firstAttribute="top" secondItem="Djf-bW-oAL" secondAttribute="bottom" id="4mI-hI-1Qi"/>
+                            <constraint firstItem="pGz-S8-PFx" firstAttribute="leading" secondItem="F6e-Fb-wQ7" secondAttribute="leading" id="Ai4-Hm-gHm"/>
+                            <constraint firstItem="SNz-5g-BcB" firstAttribute="top" secondItem="r0R-kG-Slm" secondAttribute="bottom" id="NPb-h6-Y6O"/>
+                            <constraint firstAttribute="bottom" secondItem="pGz-S8-PFx" secondAttribute="bottom" id="dc4-L1-tht"/>
+                            <constraint firstItem="pGz-S8-PFx" firstAttribute="top" secondItem="F6e-Fb-wQ7" secondAttribute="top" id="kge-od-ybd"/>
+                            <constraint firstAttribute="trailing" secondItem="r0R-kG-Slm" secondAttribute="trailing" id="lGK-nl-phW"/>
+                            <constraint firstItem="r0R-kG-Slm" firstAttribute="leading" secondItem="F6e-Fb-wQ7" secondAttribute="leading" id="noB-3x-8Rz"/>
+                            <constraint firstAttribute="trailing" secondItem="pGz-S8-PFx" secondAttribute="trailing" id="xla-8l-Ba3"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Corona-Infos" image="corona" id="4As-G1-oXZ"/>
+                    <connections>
+                        <outlet property="activity" destination="pGz-S8-PFx" id="HL1-lV-mIh"/>
+                        <outlet property="webView26" destination="r0R-kG-Slm" id="e8g-q6-y4j"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kx7-Up-lvE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2556" y="-294"/>
+        </scene>
     </scenes>
     <resources>
         <image name="about" width="33.5" height="33.5"/>
         <image name="ags" width="33.5" height="33.5"/>
         <image name="ank" width="33.5" height="33.5"/>
+        <image name="corona" width="33.5" height="33.5"/>
         <image name="ferien" width="33.5" height="33.5"/>
         <image name="intranet" width="33.5" height="33.5"/>
         <image name="katalog" width="33.5" height="33.5"/>
