@@ -8,6 +8,7 @@
 
 import UIKit
 import Crashlytics
+import SafariServices
 
 class TwentysecondViewController: UIViewController, UIWebViewDelegate {
     
@@ -112,8 +113,15 @@ class TwentysecondViewController: UIViewController, UIWebViewDelegate {
             
             if request.url!.absoluteString.range(of: "export_execute.php") != nil {
                 
-                if #available(iOS 10.0, *) {
-                    UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
+                if #available(iOS 9.0, *) {
+                let vc = SFSafariViewController(url: request.url!)
+                    let blistaColor = UIColor(red: 0, green: 0.651, blue: 0.1137, alpha: 1)
+                    if #available(iOS 10.0, *) {
+                        vc.preferredControlTintColor = blistaColor
+                    } else {
+                        vc.view.tintColor = blistaColor
+                    }
+                        present(vc, animated: true)
                 } else {
                     UIApplication.shared.openURL(request.url!)
                 }

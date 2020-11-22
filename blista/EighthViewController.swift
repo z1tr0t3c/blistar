@@ -8,6 +8,7 @@
 
 import UIKit
 import Crashlytics
+import SafariServices
 
 private var viewHasLoaded = false
 
@@ -181,11 +182,20 @@ class EighthViewController: UIViewController, UIWebViewDelegate {
                     }
                 }
                 
-                if #available(iOS 10.0, *) {
-                    UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
-                } else {
-                    UIApplication.shared.openURL(request.url!)
-                }
+                if #available(iOS 9.0, *) {
+                    UIApplication.shared.isIdleTimerDisabled = true
+                    let vc = SFSafariViewController(url: request.url!)
+                        let blistaColor = UIColor(red: 0, green: 0.651, blue: 0.1137, alpha: 1)
+                        if #available(iOS 10.0, *) {
+                            vc.preferredControlTintColor = blistaColor
+                        } else {
+                            vc.view.tintColor = blistaColor
+                        }
+                            present(vc, animated: true)
+                    } else {
+                    UIApplication.shared.isIdleTimerDisabled = false
+                        UIApplication.shared.openURL(request.url!)
+                    }
                 
                 return false
             }
