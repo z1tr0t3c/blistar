@@ -29,7 +29,7 @@ class NineteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "raumbuchungen",
                                    customAttributes: [:])
             
-            webView19.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/blocks/mrbs/web/index.php#maincontent")!))
+            webView19.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/blocks/mrbs/web/index.php#maincontent")!))
         case .cellular:
             
             Answers.logContentView(withName: "Raumbuchungen",
@@ -37,7 +37,7 @@ class NineteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "raumbuchungen",
                                    customAttributes: [:])
             
-            webView19.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/blocks/mrbs/web/index.php#maincontent")!))
+            webView19.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/blocks/mrbs/web/index.php#maincontent")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
@@ -65,7 +65,7 @@ class NineteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "raumbuchungen",
                                    customAttributes: [:])
             
-            webView19.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/blocks/mrbs/web/index.php#maincontent")!))
+            webView19.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/blocks/mrbs/web/index.php#maincontent")!))
         case .cellular:
             
             Answers.logContentView(withName: "Raumbuchungen",
@@ -73,7 +73,7 @@ class NineteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "raumbuchungen",
                                    customAttributes: [:])
             
-            webView19.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/blocks/mrbs/web/index.php#maincontent")!))
+            webView19.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/blocks/mrbs/web/index.php#maincontent")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()

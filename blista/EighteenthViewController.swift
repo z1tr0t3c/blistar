@@ -29,7 +29,7 @@ class EighteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "ankündigen",
                                    customAttributes: [:])
             
-            webView18.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
+            webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
         case .cellular:
             
             Answers.logContentView(withName: "Ankündigen",
@@ -37,7 +37,7 @@ class EighteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "ankündigen",
                                    customAttributes: [:])
             
-            webView18.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
+            webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
@@ -65,7 +65,7 @@ class EighteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "ankündigen",
                                    customAttributes: [:])
             
-            webView18.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
+            webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
         case .cellular:
             
             Answers.logContentView(withName: "Ankündigen",
@@ -73,7 +73,7 @@ class EighteenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "ankündigen",
                                    customAttributes: [:])
             
-            webView18.loadRequest(URLRequest(url: URL(string: "https://edu.blista.de/moodle/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
+            webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()

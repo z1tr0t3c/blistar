@@ -29,7 +29,7 @@ class TenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "newsletter",
                                    customAttributes: [:])
             
-            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/newsletter#page-content")!))
+            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/ihr-weg-zu-uns#Ko")!))
         case .cellular:
             
             Answers.logContentView(withName: "Newsletter",
@@ -37,7 +37,7 @@ class TenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "newsletter",
                                    customAttributes: [:])
             
-            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/newsletter#page-content")!))
+            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/ihr-weg-zu-uns#Ko")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
@@ -64,7 +64,7 @@ class TenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "newsletter",
                                    customAttributes: [:])
             
-            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/newsletter#page-content")!))
+            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/ihr-weg-zu-uns#Ko")!))
         case .cellular:
             
             Answers.logContentView(withName: "Newsletter",
@@ -72,7 +72,7 @@ class TenthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "newsletter",
                                    customAttributes: [:])
             
-            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/newsletter#page-content")!))
+            webView10.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/ihr-weg-zu-uns#Ko")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
