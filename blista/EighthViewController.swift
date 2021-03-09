@@ -32,7 +32,7 @@ class EighthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "katalog",
                                    customAttributes: [:])
             
-           webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/allegro")!))
+           webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/")!))
             
         case .cellular:
             
@@ -41,7 +41,7 @@ class EighthViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "katalog",
                                    customAttributes: [:])
             
-            webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/allegro")!))
+            webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/")!))
             
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
@@ -68,7 +68,7 @@ class EighthViewController: UIViewController, UIWebViewDelegate {
             if viewHasLoaded == true {
                 return
             } else {
-                webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/allegro")!))
+                webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/")!))
             }
             
             
@@ -76,7 +76,7 @@ class EighthViewController: UIViewController, UIWebViewDelegate {
             if viewHasLoaded == true {
                 return
             } else {
-                webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/allegro")!))
+                webView8.loadRequest(URLRequest(url: URL(string: "https://katalog.blista.de/")!))
             }
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
