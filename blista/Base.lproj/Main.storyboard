@@ -1121,10 +1121,10 @@
             </objects>
             <point key="canvasLocation" x="-842.39999999999998" y="-977.36131934032994"/>
         </scene>
-        <!--Essen bestellen-->
+        <!--blistaMeet-->
         <scene sceneID="QYO-PG-ev7">
             <objects>
-                <viewController title="Essen bestellen" automaticallyAdjustsScrollViewInsets="NO" id="5E8-aG-Wgw" customClass="TwentyfifthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="blistaMeet" automaticallyAdjustsScrollViewInsets="NO" id="5E8-aG-Wgw" customClass="TwentyfifthViewController" customModule="blista" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ns8-4c-Zck"/>
                         <viewControllerLayoutGuide type="bottom" id="M1a-x2-f0b"/>
@@ -1132,38 +1132,9 @@
                     <view key="view" contentMode="scaleToFill" id="tdb-ox-30u">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView contentMode="scaleToFill" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wnc-48-2ey">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <dataDetectorType key="dataDetectorTypes" phoneNumber="YES" link="YES" address="YES"/>
-                                <connections>
-                                    <outlet property="delegate" destination="5E8-aG-Wgw" id="aRM-HC-xJ4"/>
-                                </connections>
-                            </webView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Obq-VJ-RqL">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <color key="color" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
-                            </activityIndicatorView>
-                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="Obq-VJ-RqL" secondAttribute="bottom" id="82O-NB-fD8"/>
-                            <constraint firstItem="Obq-VJ-RqL" firstAttribute="top" secondItem="tdb-ox-30u" secondAttribute="top" id="C4c-xM-19W"/>
-                            <constraint firstAttribute="trailing" secondItem="Wnc-48-2ey" secondAttribute="trailing" id="DQc-Jx-Bhm"/>
-                            <constraint firstItem="Wnc-48-2ey" firstAttribute="leading" secondItem="tdb-ox-30u" secondAttribute="leading" id="G5D-yq-QFj"/>
-                            <constraint firstItem="Wnc-48-2ey" firstAttribute="top" secondItem="Ns8-4c-Zck" secondAttribute="bottom" id="J0X-d2-w7R"/>
-                            <constraint firstItem="M1a-x2-f0b" firstAttribute="top" secondItem="Wnc-48-2ey" secondAttribute="bottom" id="Src-P7-Cdf"/>
-                            <constraint firstAttribute="trailing" secondItem="Obq-VJ-RqL" secondAttribute="trailing" id="d2m-nY-fIU"/>
-                            <constraint firstItem="Obq-VJ-RqL" firstAttribute="leading" secondItem="tdb-ox-30u" secondAttribute="leading" id="dbN-xb-vNy"/>
-                        </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Essen bestellen" image="ticket" id="dFd-uJ-P6I"/>
-                    <connections>
-                        <outlet property="activity" destination="Obq-VJ-RqL" id="FuM-h4-0rc"/>
-                        <outlet property="webView25" destination="Wnc-48-2ey" id="dyD-TT-0uz"/>
-                    </connections>
+                    <tabBarItem key="tabBarItem" title="blistaMeet" image="meet" id="dFd-uJ-P6I"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Hi9-te-4VR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1227,6 +1198,7 @@
         <image name="intranet" width="33.5" height="33.5"/>
         <image name="katalog" width="33.5" height="33.5"/>
         <image name="kontakt" width="33.5" height="33.5"/>
+        <image name="meet" width="33.5" height="33.5"/>
         <image name="news" width="33.5" height="33.5"/>
         <image name="newsletter" width="33.5" height="33.5"/>
         <image name="open" width="33.5" height="33.5"/>
@@ -1236,7 +1208,6 @@
         <image name="stundenplan" width="33.5" height="33.5"/>
         <image name="termine" width="33.5" height="33.5"/>
         <image name="terminplan" width="33.5" height="33.5"/>
-        <image name="ticket" width="33.5" height="33.5"/>
         <image name="twitter" width="30" height="30"/>
         <image name="user" width="33.5" height="33.5"/>
         <image name="vplan1" width="33.5" height="33.5"/>

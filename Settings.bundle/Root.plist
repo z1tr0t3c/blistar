@@ -18,16 +18,6 @@
 		</dict>
 		<dict>
 			<key>Type</key>
-			<string>PSToggleSwitchSpecifier</string>
-			<key>Title</key>
-			<string>Mensa QR-Code-Scanner (Nur für Mitarbeiter)</string>
-			<key>Key</key>
-			<string>mensa</string>
-			<key>DefaultValue</key>
-			<false/>
-		</dict>
-		<dict>
-			<key>Type</key>
 			<string>PSGroupSpecifier</string>
 			<key>Title</key>
 			<string>Über blistar-App</string>
