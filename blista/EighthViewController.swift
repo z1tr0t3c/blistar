@@ -110,10 +110,26 @@ class EighthViewController: UIViewController, UIWebViewDelegate {
     
     func webView(_ webView: UIWebView, shouldStartLoadWith request: URLRequest, navigationType: UIWebViewNavigationType) -> Bool {
         if navigationType == UIWebViewNavigationType.linkClicked {
-
-            if (request.url!.host == "katalog.blista.de") {
-                return true
+            
+            if (request.url!.scheme == "mailto") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
             } else {
+                UIApplication.shared.openURL(request.url!)
+                    }
+                return false
+            }
+                                   
+            if (request.url!.scheme == "tel") {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
+            } else {
+                UIApplication.shared.openURL(request.url!)
+                }
+                return false
+            }
+            
+            if (request.url!.pathExtension == "zip") || (request.url!.host == "blibu-katalog.blista.de") {
 
                 let userDefaults = UserDefaults.standard
                 let wifisetting = userDefaults.bool(forKey: "wifionly")
@@ -123,33 +139,6 @@ class EighthViewController: UIViewController, UIWebViewDelegate {
                     let reachability = Reachability()!
                     
                     if reachability.connection == .cellular {
-                        
-                        if (request.url!.host == "www.blista.de") {
-                            if #available(iOS 10.0, *) {
-                                UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
-                            } else {
-                                UIApplication.shared.openURL(request.url!)
-                            }
-                            return false
-                        }
-                        
-                        if (request.url!.scheme == "mailto") {
-                            if #available(iOS 10.0, *) {
-                                UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
-                            } else {
-                                UIApplication.shared.openURL(request.url!)
-                            }
-                            return false
-                        }
-                        
-                        if (request.url!.scheme == "tel") {
-                            if #available(iOS 10.0, *) {
-                                UIApplication.shared.open(request.url!, options: [:], completionHandler: nil)
-                            } else {
-                                UIApplication.shared.openURL(request.url!)
-                            }
-                            return false
-                        }
                         
                         if self.webView8.isLoading {
                         self.webView8.stopLoading()
