@@ -9,5 +9,6 @@ target 'blista' do
 
 pod 'Firebase/Core'
 pod 'Firebase/Messaging'
+pod 'SwiftyJSON', '~> 4.0'
 
 end

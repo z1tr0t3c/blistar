@@ -77,10 +77,12 @@ PODS:
   - nanopb/encode (1.30906.0)
   - PromisesObjC (1.2.10)
   - Protobuf (3.13.0)
+  - SwiftyJSON (4.3.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
+  - SwiftyJSON (~> 4.0)
 
 SPEC REPOS:
   trunk:
@@ -97,6 +99,7 @@ SPEC REPOS:
     - nanopb
     - PromisesObjC
     - Protobuf
+    - SwiftyJSON
 
 SPEC CHECKSUMS:
   Firebase: c23a36d9e4cdf7877dfcba8dd0c58add66358999
@@ -112,7 +115,8 @@ SPEC CHECKSUMS:
   nanopb: 59317e09cf1f1a0af72f12af412d54edf52603fc
   PromisesObjC: b14b1c6b68e306650688599de8a45e49fae81151
   Protobuf: 3dac39b34a08151c6d949560efe3f86134a3f748
+  SwiftyJSON: 6faa0040f8b59dead0ee07436cbf76b73c08fd08
 
-PODFILE CHECKSUM: 520344186de1f29c76e02112d62a271448eeb812
+PODFILE CHECKSUM: c7a300f02ff7a4a60adc671fd33d1293385e5d7e
 
 COCOAPODS: 1.10.1
