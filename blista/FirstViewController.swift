@@ -27,8 +27,10 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         }
     }
 
+    public var sku = ""
+    
     func activateMe() {
-        
+                
         let alert = UIAlertController(title: "Bitte denk über eine Spende nach", message: "Die Entwicklung der blistar-App kostet viel Zeit und Geld. Spende für die blistar-App und sichere die Weiterentwicklung der App oder warte 60 Sekunden.", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Spenden", style: .default, handler: { action in
@@ -67,155 +69,320 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         
         alert.addAction(UIAlertAction(title: "Spendenschlüssel eingeben", style: .default, handler: { action in
             
-            let alert2 = UIAlertController(title: "Spendenschlüssel", message: nil, preferredStyle: .alert)
-            alert2.addAction(UIAlertAction(title: "Abbrechen", style: .cancel, handler: { action in
+            let alert8 = UIAlertController(title: "Bitte wähle dein gekauftes Abo", message: "Wähle hier dein auf der Spendenseite gewähltes Spenden-Abo aus und gib den passenden Spendenschlüssel ein.", preferredStyle: UIAlertControllerStyle.alert)
 
-                self.present(alert, animated: true)
+            let action01 = UIAlertAction(title: "monatlich", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                self.sku = "blistar-app-subscription-m"
                 
-            }))
-            alert2.addTextField(configurationHandler: { textField in
-                textField.placeholder = "Gib deinen Spendenschlüssel ein"
-            })
+                let alert2 = UIAlertController(title: "Spendenschlüssel", message: "Deinen Spendenschlüssel findest du in der Bestätigungs-E-Mail oder unter Mein Konto auf der Spendenseite.", preferredStyle: .alert)
+                alert2.addAction(UIAlertAction(title: "Abbrechen", style: .cancel, handler: { action in
 
-            alert2.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                    self.present(alert, animated: true)
+                    
+                }))
+                alert2.addTextField(configurationHandler: { textField in
+                    textField.placeholder = "Gib deinen Spendenschlüssel ein"
+                })
 
-                let license = alert2.textFields![0]
+                alert2.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
 
-                if license.text != "" {
-                let licenseString = license.text!
-                print(licenseString)
-                    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+                    let license = alert2.textFields![0]
 
-                    guard let url = URL(string: "https://zitrotec.de/it-service/wp-admin/admin-ajax.php?action=license_key_activate&store_code=F3Up0N7tI87JWEp&sku=blistar-app-subscription-m&license_key=\(licenseString)") else {return}
-                    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-                    guard let dataResponse = data,
-                              error == nil else {
-                              print(error?.localizedDescription ?? "Response Error")
-                                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                    if license.text != "" {
+                    let licenseString = license.text!
+                    print(licenseString)
+                        UIApplication.shared.isNetworkActivityIndicatorVisible = true
 
+                        guard let url = URL(string: "https://zitrotec.de/it-service/wp-admin/admin-ajax.php?action=license_key_activate&store_code=F3Up0N7tI87JWEp&sku=\(self.sku)&license_key=\(licenseString)") else {return}
+                        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                        guard let dataResponse = data,
+                                  error == nil else {
+                                  print(error?.localizedDescription ?? "Response Error")
+                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+
+                                    DispatchQueue.main.async {
+                                        let alert5 = UIAlertController(title: "Fehler: " + (error?.localizedDescription ?? "Response Error"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
+
+                                        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                                            self.present(alert, animated: true)
+                                        })
+
+                                        alert5.addAction(action)
+                                        self.present(alert5, animated: true, completion: nil)
+                                        
+                                    }
+                                    
+                                  return }
+                            let json = try? JSON(data: dataResponse)
+                            let status = json?["status"].stringValue
+                            print(status ?? "null")
+                            let error = json?["errors"]["license_key"][0].stringValue
+                            print(error ?? "null")
+                            
+                            if (status != "200") {
+                                
                                 DispatchQueue.main.async {
-                                    let alert5 = UIAlertController(title: "Fehler: " + (error?.localizedDescription ?? "Response Error"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
+                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                                    
+                                    let alert4 = UIAlertController(title: "Fehler: " + (error ?? "null"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
 
                                     let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                         self.present(alert, animated: true)
                                     })
 
-                                    alert5.addAction(action)
-                                    self.present(alert5, animated: true, completion: nil)
+                                    alert4.addAction(action)
+                                    self.present(alert4, animated: true, completion: nil)
                                     
                                 }
                                 
-                              return }
-                        let json = try? JSON(data: dataResponse)
-                        let status = json?["status"].stringValue
-                        print(status ?? "null")
-                        let error = json?["errors"]["license_key"][0].stringValue
-                        print(error ?? "null")
-                        
-                        if (status != "200") {
-
-                        UIApplication.shared.isNetworkActivityIndicatorVisible = false
-                            
-                            DispatchQueue.main.async {
-                                let alert4 = UIAlertController(title: "Fehler: " + (error ?? "null"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
-
-                                let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
-                                    self.present(alert, animated: true)
-                                })
-
-                                alert4.addAction(action)
-                                self.present(alert4, animated: true, completion: nil)
-                                
                             }
                             
-                        }
-                        
-                        else {
-                            
-                            let message = json?["message"].stringValue
-                            
-                            let activation_id = json?["data"]["activation_id"].stringValue
-                            
-                            let expire_date = json?["data"]["expire_date"].stringValue
+                            else {
+                                
+                                let message = json?["message"].stringValue
+                                
+                                let activation_id = json?["data"]["activation_id"].stringValue
+                                
+                                let expire_date = json?["data"]["expire_date"].stringValue
 
-                            let the_key = json?["data"]["the_key"].stringValue
+                                let the_key = json?["data"]["the_key"].stringValue
 
-                            let url = json?["data"]["url"].stringValue
+                                let url = json?["data"]["url"].stringValue
 
-                            let has_expired = json?["data"]["has_expired"].stringValue
+                                let has_expired = json?["data"]["has_expired"].stringValue
 
-                            let status = json?["data"]["status"].stringValue
+                                let status = json?["data"]["status"].stringValue
 
-                            let ctoken = json?["data"]["ctoken"].stringValue
-                            
-                            let name = json?["data"]["name"].stringValue
-                            
-                            print("Message:")
-                            print(message ?? "null");
-                            print("activation_id:")
-                            print(activation_id ?? "null");
-                            print("expire_date:")
-                            print(expire_date ?? "null");
-                            print("the_key:")
-                            print(the_key ?? "null");
-                            print("url:")
-                            print(url ?? "null");
-                            print("has_expired:")
-                            print(has_expired ?? "null");
-                            print("status:")
-                            print(status ?? "null");
-                            print("ctoken:")
-                            print(ctoken ?? "null");
-                            print("name:")
-                            print(name ?? "null");
-                            
-                            let defaults = UserDefaults.standard
+                                let ctoken = json?["data"]["ctoken"].stringValue
+                                
+                                let name = json?["data"]["name"].stringValue
+                                
+                                print("Message:")
+                                print(message ?? "null");
+                                print("activation_id:")
+                                print(activation_id ?? "null");
+                                print("expire_date:")
+                                print(expire_date ?? "null");
+                                print("the_key:")
+                                print(the_key ?? "null");
+                                print("url:")
+                                print(url ?? "null");
+                                print("has_expired:")
+                                print(has_expired ?? "null");
+                                print("status:")
+                                print(status ?? "null");
+                                print("ctoken:")
+                                print(ctoken ?? "null");
+                                print("name:")
+                                print(name ?? "null");
+                                
+                                let defaults = UserDefaults.standard
 
-                            defaults.set(activation_id, forKey: "activation_id")
-                            defaults.set(expire_date, forKey: "expire_date")
-                            defaults.set(the_key, forKey: "the_key")
-                            defaults.set(url, forKey: "url")
-                            defaults.set(status, forKey: "status")
-                            defaults.set(has_expired, forKey: "has_expired")
-                            defaults.set(ctoken, forKey: "ctoken")
-                            defaults.set(name, forKey: "name")
-                            defaults.set(true, forKey: "active")
+                                defaults.set(activation_id, forKey: "activation_id")
+                                defaults.set(expire_date, forKey: "expire_date")
+                                defaults.set(the_key, forKey: "the_key")
+                                defaults.set(url, forKey: "url")
+                                defaults.set(status, forKey: "status")
+                                defaults.set(has_expired, forKey: "has_expired")
+                                defaults.set(ctoken, forKey: "ctoken")
+                                defaults.set(name, forKey: "name")
+                                defaults.set(true, forKey: "active")
 
-                            let UserInfo1 = "Abo: \n" + (name ?? "null")
-                            let UserInfo2 = "\n Ablaufdatum: \n" + (expire_date ?? "null")
-                            let UserInfo3 = "\n Aktivierungs-ID: \n" + (activation_id ?? "null")
-                            let UserInfo = UserInfo1 + UserInfo2 + UserInfo3
-                            
-                            UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                                let UserInfo1 = "Abo: \n" + (name ?? "null")
+                                let UserInfo2 = "\n Ablaufdatum: \n" + (expire_date ?? "null")
+                                let UserInfo3 = "\n Aktivierungs-ID: \n" + (activation_id ?? "null")
+                                let UserInfo = UserInfo1 + UserInfo2 + UserInfo3
+                                
+                                DispatchQueue.main.async {
+                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                                    
+                                    let alert7 = UIAlertController(title: "Erfolg: " + (message ?? "null"), message: "Vielen Dank für deine Unterstützung, die 60 Sek. Wartezeit entfällt nun. \n Details: \n" + (UserInfo ), preferredStyle: UIAlertControllerStyle.alert)
 
-                            
-                            DispatchQueue.main.async {
-                                let alert7 = UIAlertController(title: "Erfolg: " + (message ?? "null"), message: "Vielen Dank für deine Unterstützung, die 60 Sek. Wartezeit entfällt nun. \n Details: \n" + (UserInfo ), preferredStyle: UIAlertControllerStyle.alert)
+                                    let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                                        // Spark!
+                                    })
 
-                                let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
-                                    // Spark!
-                                })
-
-                                alert7.addAction(action)
-                                self.present(alert7, animated: true, completion: nil)
+                                    alert7.addAction(action)
+                                    self.present(alert7, animated: true, completion: nil)
+                                    
+                                }
                                 
                             }
-                            
+                                
                         }
-                            
+                        task.resume()
+                        
+                        
+                    } else {
+                                                                
+                        self.present(alert2, animated: true)
+                        
                     }
-                    task.resume()
                     
-                    
-                } else {
-                                                            
-                    self.present(alert2, animated: true)
-                    
-                }
+                }))
                 
-            }))
+                self.present(alert2, animated: true)
+                
+            })
+                
+            let action02 = UIAlertAction(title: "jährlich", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                self.sku = "blistar-app-subscription-y"
+                
+                let alert2 = UIAlertController(title: "Spendenschlüssel", message: "Deinen Spendenschlüssel findest du in der Bestätigungs-E-Mail oder unter Mein Konto auf der Spendenseite.", preferredStyle: .alert)
+                alert2.addAction(UIAlertAction(title: "Abbrechen", style: .cancel, handler: { action in
+
+                    self.present(alert, animated: true)
+                    
+                }))
+                alert2.addTextField(configurationHandler: { textField in
+                    textField.placeholder = "Gib deinen Spendenschlüssel ein"
+                })
+
+                alert2.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+
+                    let license = alert2.textFields![0]
+
+                    if license.text != "" {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = true
+                    let licenseString = license.text!
+                    print(licenseString)
+
+                        guard let url = URL(string: "https://zitrotec.de/it-service/wp-admin/admin-ajax.php?action=license_key_activate&store_code=F3Up0N7tI87JWEp&sku=\(self.sku)&license_key=\(licenseString)") else {return}
+                        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+                        guard let dataResponse = data,
+                                  error == nil else {
+                                  print(error?.localizedDescription ?? "Response Error")
+                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+
+                                    DispatchQueue.main.async {
+                                        let alert5 = UIAlertController(title: "Fehler: " + (error?.localizedDescription ?? "Response Error"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
+
+                                        let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                                            self.present(alert, animated: true)
+                                        })
+
+                                        alert5.addAction(action)
+                                        self.present(alert5, animated: true, completion: nil)
+                                        
+                                    }
+                                    
+                                  return }
+                            let json = try? JSON(data: dataResponse)
+                            let status = json?["status"].stringValue
+                            print(status ?? "null")
+                            let error = json?["errors"]["license_key"][0].stringValue
+                            print(error ?? "null")
+                            
+                            if (status != "200") {
+                                
+                                DispatchQueue.main.async {
+                                    
+                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                                    
+                                    let alert4 = UIAlertController(title: "Fehler: " + (error ?? "null"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
+
+                                    let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                                        self.present(alert, animated: true)
+                                    })
+
+                                    alert4.addAction(action)
+                                    self.present(alert4, animated: true, completion: nil)
+                                    
+                                }
+                                
+                            }
+                            
+                            else {
+                                
+                                let message = json?["message"].stringValue
+                                
+                                let activation_id = json?["data"]["activation_id"].stringValue
+                                
+                                let expire_date = json?["data"]["expire_date"].stringValue
+
+                                let the_key = json?["data"]["the_key"].stringValue
+
+                                let url = json?["data"]["url"].stringValue
+
+                                let has_expired = json?["data"]["has_expired"].stringValue
+
+                                let status = json?["data"]["status"].stringValue
+
+                                let ctoken = json?["data"]["ctoken"].stringValue
+                                
+                                let name = json?["data"]["name"].stringValue
+                                
+                                print("Message:")
+                                print(message ?? "null");
+                                print("activation_id:")
+                                print(activation_id ?? "null");
+                                print("expire_date:")
+                                print(expire_date ?? "null");
+                                print("the_key:")
+                                print(the_key ?? "null");
+                                print("url:")
+                                print(url ?? "null");
+                                print("has_expired:")
+                                print(has_expired ?? "null");
+                                print("status:")
+                                print(status ?? "null");
+                                print("ctoken:")
+                                print(ctoken ?? "null");
+                                print("name:")
+                                print(name ?? "null");
+                                
+                                let defaults = UserDefaults.standard
+
+                                defaults.set(activation_id, forKey: "activation_id")
+                                defaults.set(expire_date, forKey: "expire_date")
+                                defaults.set(the_key, forKey: "the_key")
+                                defaults.set(url, forKey: "url")
+                                defaults.set(status, forKey: "status")
+                                defaults.set(has_expired, forKey: "has_expired")
+                                defaults.set(ctoken, forKey: "ctoken")
+                                defaults.set(name, forKey: "name")
+                                defaults.set(true, forKey: "active")
+
+                                let UserInfo1 = "Abo: \n" + (name ?? "null")
+                                let UserInfo2 = "\n Ablaufdatum: \n" + (expire_date ?? "null")
+                                let UserInfo3 = "\n Aktivierungs-ID: \n" + (activation_id ?? "null")
+                                let UserInfo = UserInfo1 + UserInfo2 + UserInfo3
+                                
+                                DispatchQueue.main.async {
+                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                                    
+                                    let alert7 = UIAlertController(title: "Erfolg: " + (message ?? "null"), message: "Vielen Dank für deine Unterstützung, die 60 Sek. Wartezeit entfällt nun. \n Details: \n" + (UserInfo ), preferredStyle: UIAlertControllerStyle.alert)
+
+                                    let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                                        // Spark!
+                                    })
+
+                                    alert7.addAction(action)
+                                    self.present(alert7, animated: true, completion: nil)
+                                    
+                                }
+                                
+                            }
+                                
+                        }
+                        task.resume()
+                        
+                        
+                    } else {
+                                                                
+                        self.present(alert2, animated: true)
+                        
+                    }
+                    
+                }))
+                
+                self.present(alert2, animated: true)
+                
+            })
             
-            self.present(alert2, animated: true)
+            alert8.addAction(action01)
+            alert8.addAction(action02)
+            self.present(alert8, animated: true, completion: nil)
             
         }))
 
@@ -228,7 +395,6 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         // Do any additional setup after loading the view, typically from a nib.
         
         let defaults = UserDefaults.standard
-        
         let activation_id = defaults.string(forKey: "activation_id")
         let the_key = defaults.string(forKey: "the_key")
         let url = defaults.string(forKey: "url")
@@ -236,7 +402,18 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         let has_expired = defaults.bool(forKey: "has_expired")
         let ctoken = defaults.string(forKey: "ctoken")
         let name = defaults.string(forKey: "name")
+        let expire_date = defaults.string(forKey: "expire_date")
         let active = defaults.bool(forKey: "active")
+
+        let myDateFormatter = DateFormatter()
+        myDateFormatter.dateFormat = "yyyy-MM-dd"
+        let customDate = myDateFormatter.string(for: Date())
+        let parsedexpiredate = expire_date?.replacingOccurrences(of: " ", with: "") ?? "null"
+        let parsed_expire_date = parsedexpiredate.dropLast(5)
+        
+        print("DATUM")
+        print(customDate ?? "null")
+        print(parsed_expire_date)
 
         
         let launchedBefore = defaults.bool(forKey: "launchedBefore")
@@ -246,9 +423,69 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                 if !active {
                 activateMe()
                 DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
-                 self.dismiss(animated: true, completion: nil)
+                self.dismiss(animated: true, completion: nil)
                 }
-            }
+                } else {
+                    
+                    if (!parsed_expire_date.isEmpty) {
+                        
+                        if (customDate ?? "null" > parsed_expire_date) {
+                               print("customDate is later than parsed_expire_date")
+                            defaults.set(false, forKey: "active")
+                            defaults.set(true, forKey: "has_expired")
+                            
+                            let myMessage = "Dein Spendenschlüssel ist am " + parsed_expire_date + " abgelaufen. Du kannst ihn aber ganz leicht verlängern. Wenn du dies nicht möchtest, tippe einfach auf Spendenschlüssel eingeben und warte 60 Sekunden."
+                            
+                            let alert8 = UIAlertController(title: "Dein Spendenschlüssel ist abgelaufen", message: myMessage, preferredStyle: UIAlertControllerStyle.alert)
+
+                            let action = UIAlertAction(title: "Spendenschlüssel verlängern", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                                let url2 = URL(string:"https://zitrotec.de/it-service/mein-konto/view-license-key?key=\(the_key ?? "null")")
+                                 
+                                    let reachability = Reachability()!
+                                    
+                                    switch reachability.connection {
+                                    case .wifi:
+                                        
+                                        if #available(iOS 10.0, *) {
+                                            UIApplication.shared.open(url2!, options: [:], completionHandler: nil)
+                                        } else {
+                                            UIApplication.shared.openURL(url2!)
+                                        }
+
+                                    case .cellular:
+                                        
+                                        if #available(iOS 10.0, *) {
+                                            UIApplication.shared.open(url2!, options: [:], completionHandler: nil)
+                                        } else {
+                                            UIApplication.shared.openURL(url2!)
+                                        }
+                                        
+                                    case .none:
+                                        let alert = UIAlertView()
+                                        alert.title = "Du bist Offline"
+                                        alert.message = "Bitte stell eine Internetverbindung her, um diesen Inhalt anzuzeigen."
+                                        alert.addButton(withTitle: "OK")
+                                        alert.show()
+                                    }
+                                self.present(alert8, animated: true, completion: nil)
+                            })
+                            
+                            let action2 = UIAlertAction(title: "Spendenschlüssel eingeben", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
+                                self.activateMe()
+                                DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
+                                self.dismiss(animated: true, completion: nil)
+                                }
+                            })
+
+                            alert8.addAction(action)
+                            alert8.addAction(action2)
+                            self.present(alert8, animated: true, completion: nil)
+                            
+                        }
+                        
+                    }
+                    
+                }
         }
         else
         {
