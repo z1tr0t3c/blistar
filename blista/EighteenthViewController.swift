@@ -24,17 +24,17 @@ class EighteenthViewController: UIViewController, UIWebViewDelegate {
         switch reachability.connection {
         case .wifi:
             
-            Answers.logContentView(withName: "Ankündigen",
-                                   contentType: "Ankündigen",
-                                   contentId: "ankündigen",
+            Answers.logContentView(withName: "Ankündigungen",
+                                   contentType: "Ankündigungen",
+                                   contentId: "ankündigungen",
                                    customAttributes: [:])
             
             webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
         case .cellular:
             
-            Answers.logContentView(withName: "Ankündigen",
-                                   contentType: "Ankündigen",
-                                   contentId: "ankündigen",
+            Answers.logContentView(withName: "Ankündigungen",
+                                   contentType: "Ankündigungen",
+                                   contentId: "ankündigungen",
                                    customAttributes: [:])
             
             webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
@@ -60,17 +60,17 @@ class EighteenthViewController: UIViewController, UIWebViewDelegate {
         switch reachability.connection {
         case .wifi:
             
-            Answers.logContentView(withName: "Ankündigen",
-                                   contentType: "Ankündigen",
-                                   contentId: "ankündigen",
+            Answers.logContentView(withName: "Ankündigungen",
+                                   contentType: "Ankündigungen",
+                                   contentId: "ankündigungen",
                                    customAttributes: [:])
             
             webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))
         case .cellular:
             
-            Answers.logContentView(withName: "Ankündigen",
-                                   contentType: "Ankündigen",
-                                   contentId: "ankündigen",
+            Answers.logContentView(withName: "Ankündigungen",
+                                   contentType: "Ankündigungen",
+                                   contentId: "ankündigungen",
                                    customAttributes: [:])
             
             webView18.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/forum/search.php?id=3&words&phrase&notwords&fullwords&timefromrestrict=1&fromday=1&frommonth=1&fromyear=2000&fromhour=0&fromminute=0&hfromday=0&hfrommonth=0&hfromyear=0&hfromhour=0&hfromminute=0&htoday=1&htomonth=1&htoyear=1&htohour=1&htominute=1&forumid&subject&user#maincontent")!))

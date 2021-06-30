@@ -23,12 +23,13 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
         self.navigationItem.rightBarButtonItem = rightBarButton
         
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
         
         let reachability = Reachability()!
         
         switch reachability.connection {
         case .wifi:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!+"("+build!+")"])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",
@@ -37,7 +38,7 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
             
             webView16.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista")!))
         case .cellular:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!+"("+build!+")"])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",
@@ -57,12 +58,13 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
         super.viewDidAppear(animated)
         
         let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+        let build = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
         
         let reachability = Reachability()!
         
         switch reachability.connection {
         case .wifi:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!+"("+build!+")"])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",
@@ -71,7 +73,7 @@ class SixteenViewController: UIViewController, UIWebViewDelegate {
             
             webView16.loadRequest(URLRequest(url: URL(string: "https://zitrotec.de/blista")!))
         case .cellular:
-            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!])
+            UserDefaults.standard.register(defaults: ["UserAgent": "blistar/"+version!+"("+build!+")"])
             
             Answers.logContentView(withName: "Über diese App",
                                    contentType: "Über diese App",

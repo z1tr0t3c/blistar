@@ -9,6 +9,7 @@
 import UIKit
 import Crashlytics
 import SwiftyJSON
+import AppTrackingTransparency
 
 class FirstViewController: UIViewController, UIWebViewDelegate {
     
@@ -30,8 +31,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
     public var sku = ""
     
     func activateMe() {
-                
-        let alert = UIAlertController(title: "Bitte denk über eine Spende nach", message: "Die Entwicklung der blistar-App kostet viel Zeit und Geld. Spende für die blistar-App und sichere die Weiterentwicklung der App oder warte 60 Sekunden.", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Bitte denk über eine Spende nach", message: "Die Entwicklung der blistar-App kostet viel Zeit und Geld. Spende für die blistar-App und sichere die Weiterentwicklung der App oder warte 10 Sekunden.", preferredStyle: .alert)
         
         alert.addAction(UIAlertAction(title: "Spenden", style: .default, handler: { action in
             let url = URL(string:"https://zitrotec.de/it-service/referenzen/blista/blistar-app-support-plan")
@@ -47,6 +47,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                        UIApplication.shared.openURL(url!)
                    }
                 self.present(alert, animated: true)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                alert.dismiss(animated: true, completion: nil)
+                }
 
                case .cellular:
                    
@@ -56,6 +59,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                        UIApplication.shared.openURL(url!)
                    }
                 self.present(alert, animated: true)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                alert.dismiss(animated: true, completion: nil)
+                }
                    
                case .none:
                    let alert3 = UIAlertView()
@@ -64,6 +70,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                    alert3.addButton(withTitle: "OK")
                    alert3.show()
                self.present(alert, animated: true)
+                DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                alert.dismiss(animated: true, completion: nil)
+                }
                }
         }))
         
@@ -78,6 +87,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                 alert2.addAction(UIAlertAction(title: "Abbrechen", style: .cancel, handler: { action in
 
                     self.present(alert, animated: true)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                    alert.dismiss(animated: true, completion: nil)
+                    }
                     
                 }))
                 alert2.addTextField(configurationHandler: { textField in
@@ -98,13 +110,17 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                         guard let dataResponse = data,
                                   error == nil else {
                                   print(error?.localizedDescription ?? "Response Error")
-                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
 
                                     DispatchQueue.main.async {
+                                        UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                                        
                                         let alert5 = UIAlertController(title: "Fehler: " + (error?.localizedDescription ?? "Response Error"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
 
                                         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                             self.present(alert, animated: true)
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                                            alert.dismiss(animated: true, completion: nil)
+                                            }
                                         })
 
                                         alert5.addAction(action)
@@ -128,6 +144,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
 
                                     let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                         self.present(alert, animated: true)
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                                        alert.dismiss(animated: true, completion: nil)
+                                        }
                                     })
 
                                     alert4.addAction(action)
@@ -196,7 +215,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                 DispatchQueue.main.async {
                                     UIApplication.shared.isNetworkActivityIndicatorVisible = false
                                     
-                                    let alert7 = UIAlertController(title: "Erfolg: " + (message ?? "null"), message: "Vielen Dank für deine Unterstützung, die 60 Sek. Wartezeit entfällt nun. \n Details: \n" + (UserInfo ), preferredStyle: UIAlertControllerStyle.alert)
+                                    let alert7 = UIAlertController(title: "Erfolg: " + (message ?? "null"), message: "Vielen Dank für deine Unterstützung, die 10 Sek. Wartezeit entfällt nun. \n Details: \n" + (UserInfo ), preferredStyle: UIAlertControllerStyle.alert)
 
                                     let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                         // Spark!
@@ -232,6 +251,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                 alert2.addAction(UIAlertAction(title: "Abbrechen", style: .cancel, handler: { action in
 
                     self.present(alert, animated: true)
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                    alert.dismiss(animated: true, completion: nil)
+                    }
                     
                 }))
                 alert2.addTextField(configurationHandler: { textField in
@@ -252,13 +274,16 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                         guard let dataResponse = data,
                                   error == nil else {
                                   print(error?.localizedDescription ?? "Response Error")
-                                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
 
                                     DispatchQueue.main.async {
+                                        UIApplication.shared.isNetworkActivityIndicatorVisible = false
                                         let alert5 = UIAlertController(title: "Fehler: " + (error?.localizedDescription ?? "Response Error"), message: "Hilfe zu diesem Fehler findest du auf der Spendenseite.", preferredStyle: UIAlertControllerStyle.alert)
 
                                         let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                             self.present(alert, animated: true)
+                                            DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                                            alert.dismiss(animated: true, completion: nil)
+                                            }
                                         })
 
                                         alert5.addAction(action)
@@ -283,6 +308,9 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
 
                                     let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                         self.present(alert, animated: true)
+                                        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+                                        alert.dismiss(animated: true, completion: nil)
+                                        }
                                     })
 
                                     alert4.addAction(action)
@@ -351,7 +379,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                 DispatchQueue.main.async {
                                     UIApplication.shared.isNetworkActivityIndicatorVisible = false
                                     
-                                    let alert7 = UIAlertController(title: "Erfolg: " + (message ?? "null"), message: "Vielen Dank für deine Unterstützung, die 60 Sek. Wartezeit entfällt nun. \n Details: \n" + (UserInfo ), preferredStyle: UIAlertControllerStyle.alert)
+                                    let alert7 = UIAlertController(title: "Erfolg: " + (message ?? "null"), message: "Vielen Dank für deine Unterstützung, die 10 Sek. Wartezeit entfällt nun. \n Details: \n" + (UserInfo ), preferredStyle: UIAlertControllerStyle.alert)
 
                                     let action = UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                         // Spark!
@@ -387,11 +415,33 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         }))
 
         self.present(alert, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 10.0) {
+        alert.dismiss(animated: true, completion: nil)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
+        
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization { (status) in
+                switch status {
+                case .authorized:
+                    print("Yeah, we got permission :)")
+                case .denied:
+                    print("Oh no, we didn't get the permission :(")
+                case .notDetermined:
+                    print("Hmm, the user has not yet received an authorization request")
+                case .restricted:
+                    print("Hmm, the permissions we got are restricted")
+                @unknown default:
+                    print("Looks like we didn't get permission")
+                }
+            }
+        } else {
+            // Nothing to do
+        }
+            
         // Do any additional setup after loading the view, typically from a nib.
         
         let defaults = UserDefaults.standard
@@ -415,16 +465,12 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         print(customDate ?? "null")
         print(parsed_expire_date)
 
-        
         let launchedBefore = defaults.bool(forKey: "launchedBefore")
         if launchedBefore
         {
             print("Not first launch.")
                 if !active {
                 activateMe()
-                DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
-                self.dismiss(animated: true, completion: nil)
-                }
                 } else {
                     
                     if (!parsed_expire_date.isEmpty) {
@@ -434,7 +480,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                             defaults.set(false, forKey: "active")
                             defaults.set(true, forKey: "has_expired")
                             
-                            let myMessage = "Dein Spendenschlüssel ist am " + parsed_expire_date + " abgelaufen. Du kannst ihn aber ganz leicht verlängern. Wenn du dies nicht möchtest, tippe einfach auf Spendenschlüssel eingeben und warte 60 Sekunden."
+                            let myMessage = "Dein Spendenschlüssel ist am " + parsed_expire_date + " abgelaufen. Du kannst ihn aber ganz leicht verlängern. Wenn du dies nicht möchtest, tippe einfach auf Spendenschlüssel eingeben und warte 10 Sekunden."
                             
                             let alert8 = UIAlertController(title: "Dein Spendenschlüssel ist abgelaufen", message: myMessage, preferredStyle: UIAlertControllerStyle.alert)
 
@@ -472,9 +518,6 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                             
                             let action2 = UIAlertAction(title: "Spendenschlüssel eingeben", style: UIAlertActionStyle.default, handler: {(action:UIAlertAction) in
                                 self.activateMe()
-                                DispatchQueue.main.asyncAfter(deadline: .now() + 60.0) {
-                                self.dismiss(animated: true, completion: nil)
-                                }
                             })
 
                             alert8.addAction(action)
@@ -504,35 +547,77 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
         
     func loadVPlan () {
         
-        let reachability = Reachability()!
-        
-        switch reachability.connection {
-        case .wifi:
+        if #available(iOS 14, *) {
+            ATTrackingManager.requestTrackingAuthorization(completionHandler: { [self] status in
+                
+                let reachability = Reachability()!
+                
+                switch reachability.connection {
+                case .wifi:
+                    
+                    Answers.logContentView(withName: "VPlan Schüler",
+                                           contentType: "VPlan Schüler",
+                                           contentId: "vplan1",
+                                           customAttributes: [:])
+                    
+                    DispatchQueue.main.async {
+                        webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                    }
+                    
+                case .cellular:
+                    
+                    Answers.logContentView(withName: "VPlan Schüler",
+                                           contentType: "VPlan Schüler",
+                                           contentId: "vplan1",
+                                           customAttributes: [:])
+                    
+                    DispatchQueue.main.async {
+                        webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                    }
+                    
+                case .none:
+                    DispatchQueue.main.async {
+                    UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                    activity.stopAnimating()
+                    let alert = UIAlertView()
+                    alert.title = "Du bist Offline"
+                    alert.message = "Bitte stell eine Internetverbindung her, um diesen Inhalt anzuzeigen."
+                    alert.addButton(withTitle: "OK")
+                    alert.show()
+                    }
+                }
+            })
+        } else {
+            let reachability = Reachability()!
             
-            Answers.logContentView(withName: "VPlan Schüler",
-                                   contentType: "VPlan Schüler",
-                                   contentId: "vplan1",
-                                   customAttributes: [:])
-            
-            webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
-            
-        case .cellular:
-            
-            Answers.logContentView(withName: "VPlan Schüler",
-                                   contentType: "VPlan Schüler",
-                                   contentId: "vplan1",
-                                   customAttributes: [:])
-            
-            webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
-            
-        case .none:
-            UIApplication.shared.isNetworkActivityIndicatorVisible = false
-            activity.stopAnimating()
-            let alert = UIAlertView()
-            alert.title = "Du bist Offline"
-            alert.message = "Bitte stell eine Internetverbindung her, um diesen Inhalt anzuzeigen."
-            alert.addButton(withTitle: "OK")
-            alert.show()
+            switch reachability.connection {
+            case .wifi:
+                
+                Answers.logContentView(withName: "VPlan Schüler",
+                                       contentType: "VPlan Schüler",
+                                       contentId: "vplan1",
+                                       customAttributes: [:])
+                
+                webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                
+            case .cellular:
+                
+                Answers.logContentView(withName: "VPlan Schüler",
+                                       contentType: "VPlan Schüler",
+                                       contentId: "vplan1",
+                                       customAttributes: [:])
+                
+                webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                
+            case .none:
+                UIApplication.shared.isNetworkActivityIndicatorVisible = false
+                activity.stopAnimating()
+                let alert = UIAlertView()
+                alert.title = "Du bist Offline"
+                alert.message = "Bitte stell eine Internetverbindung her, um diesen Inhalt anzuzeigen."
+                alert.addButton(withTitle: "OK")
+                alert.show()
+            }
         }
     }
     
