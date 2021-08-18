@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSUserTrackingUsageDescription</key>
-	<string>Wir verwenden Cookies auf den Internetseiten der blista. Einige sind für den Betrieb der Webseite notwendig. Andere helfen uns, das Informationsangebot benutzerfreundlich zusammenzustellen, sodass Sie und alle weiteren Besucherinnen und Besucher die Antworten auf ihre Fragen schnell und zuverlässig finden.</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>deDE</string>
 	<key>CFBundleDisplayName</key>
@@ -62,6 +60,8 @@
 	<string>Übermittle den Nachweis direkt mit der Kamera</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Übermittle den Nachweis direkt aus deiner Foto-Mediathek</string>
+	<key>NSUserTrackingUsageDescription</key>
+	<string>Wir verwenden Cookies auf den Internetseiten der blista. Einige sind für den Betrieb der Webseite notwendig. Andere helfen uns, das Informationsangebot benutzerfreundlich zusammenzustellen, sodass Sie und alle weiteren Besucherinnen und Besucher die Antworten auf ihre Fragen schnell und zuverlässig finden.</string>
 	<key>UIBackgroundModes</key>
 	<array>
 		<string>audio</string>

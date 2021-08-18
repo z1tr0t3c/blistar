@@ -20,7 +20,6 @@
 		2C3B6AF720AB244C002A3F5A /* privacy.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF620AB244C002A3F5A /* privacy.html */; };
 		2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */ = {isa = PBXBuildFile; fileRef = 2C3B6AF820AB2C5D002A3F5A /* opening.html */; };
 		2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */ = {isa = PBXBuildFile; fileRef = 2C4699B92055BDC9003FA3FB /* fabric.apikey */; };
-		2C5FA11F22CE43D8009145AB /* wegbeschreibung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */; };
 		2C5FA12122CE4916009145AB /* intranet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FA12022CE4916009145AB /* intranet.pdf */; };
 		2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C6186311FD680A100C8FCF1 /* Settings.bundle */; };
 		2C6186341FD6836D00C8FCF1 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */; };
@@ -40,6 +39,7 @@
 		2C99089020BAE17E0013A8F7 /* NineteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */; };
 		2CA914CC1FDC402A00EC3B02 /* imprint.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA914CA1FDC402A00EC3B02 /* imprint.html */; };
 		2CAAF1F9247094ED00E0C77D /* TwentysixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAAF1F8247094ED00E0C77D /* TwentysixthViewController.swift */; };
+		2CB527CA26CCD0C500A02A89 /* wegbeschreibung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB527C926CCD0C500A02A89 /* wegbeschreibung.pdf */; };
 		2CC72DD71FE9CA28007F874E /* license.txt in Resources */ = {isa = PBXBuildFile; fileRef = 2CC72DD61FE9CA27007F874E /* license.txt */; };
 		2CCE94421FD4DF5C00335149 /* ThirteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */; };
 		2CD575CB1FD3A3AC0060057D /* TenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */; };
@@ -88,7 +88,6 @@
 		2C3B6AF820AB2C5D002A3F5A /* opening.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = opening.html; sourceTree = "<group>"; };
 		2C4699B92055BDC9003FA3FB /* fabric.apikey */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = fabric.apikey; sourceTree = "<group>"; };
 		2C4699BB2055BE47003FA3FB /* fabric.buildsecret */ = {isa = PBXFileReference; lastKnownFileType = text; path = fabric.buildsecret; sourceTree = "<group>"; };
-		2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wegbeschreibung.pdf; sourceTree = "<group>"; };
 		2C5FA12022CE4916009145AB /* intranet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = intranet.pdf; sourceTree = "<group>"; };
 		2C6186311FD680A100C8FCF1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
@@ -109,6 +108,7 @@
 		2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthViewController.swift; sourceTree = "<group>"; };
 		2CA914CA1FDC402A00EC3B02 /* imprint.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = imprint.html; sourceTree = "<group>"; };
 		2CAAF1F8247094ED00E0C77D /* TwentysixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysixthViewController.swift; sourceTree = "<group>"; };
+		2CB527C926CCD0C500A02A89 /* wegbeschreibung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wegbeschreibung.pdf; sourceTree = "<group>"; };
 		2CC72DD61FE9CA27007F874E /* license.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license.txt; sourceTree = "<group>"; };
 		2CCE94411FD4DF5C00335149 /* ThirteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirteenthViewController.swift; sourceTree = "<group>"; };
 		2CD575CA1FD3A3AC0060057D /* TenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TenthViewController.swift; sourceTree = "<group>"; };
@@ -176,7 +176,7 @@
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
 				2CE7E59725040DB700FCEA4D /* ferienordnung.pdf */,
 				2C68E398231333990059B2CA /* terminplan.pdf */,
-				2C5FA11E22CE43D8009145AB /* wegbeschreibung.pdf */,
+				2CB527C926CCD0C500A02A89 /* wegbeschreibung.pdf */,
 				2C5FA12022CE4916009145AB /* intranet.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
 				2CE3EBC61FD64A2300DCE733 /* images */,
@@ -333,8 +333,8 @@
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
+				2CB527CA26CCD0C500A02A89 /* wegbeschreibung.pdf in Resources */,
 				2C68E3992313339A0059B2CA /* terminplan.pdf in Resources */,
-				2C5FA11F22CE43D8009145AB /* wegbeschreibung.pdf in Resources */,
 				2CE7E59825040DB800FCEA4D /* ferienordnung.pdf in Resources */,
 				2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */,
 				2CE3EBCB1FD64A2400DCE733 /* index.html in Resources */,
@@ -580,7 +580,7 @@
 				CODE_SIGN_ENTITLEMENTS = blista/blista.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = CM9ECSAB4Y;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -591,7 +591,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.20.3;
+				MARKETING_VERSION = 1.21.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -611,7 +611,7 @@
 				CODE_SIGN_ENTITLEMENTS = blista/blista.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CM9ECSAB4Y;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -621,7 +621,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.20.3;
+				MARKETING_VERSION = 1.21.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";

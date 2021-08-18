@@ -29,7 +29,7 @@ class ThirdViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "speis1",
                                    customAttributes: [:])
             
-            webView3.loadRequest(URLRequest(url: URL(string: "https://blista.de/content/Speiseplan#page-content")!))
+            webView3.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/Speiseplan-der-Mensa#page-content")!))
         case .cellular:
             
             Answers.logContentView(withName: "Speiseplan",
@@ -37,7 +37,7 @@ class ThirdViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "speis1",
                                    customAttributes: [:])
             
-            webView3.loadRequest(URLRequest(url: URL(string: "https://blista.de/content/Speiseplan#page-content")!))
+            webView3.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/Speiseplan-der-Mensa#page-content")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
@@ -62,7 +62,7 @@ class ThirdViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "speis1",
                                    customAttributes: [:])
             
-            webView3.loadRequest(URLRequest(url: URL(string: "https://blista.de/content/Speiseplan#page-content")!))
+            webView3.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/Speiseplan-der-Mensa#page-content")!))
         case .cellular:
             
             Answers.logContentView(withName: "Speiseplan",
@@ -70,7 +70,7 @@ class ThirdViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "speis1",
                                    customAttributes: [:])
             
-            webView3.loadRequest(URLRequest(url: URL(string: "https://blista.de/content/Speiseplan#page-content")!))
+            webView3.loadRequest(URLRequest(url: URL(string: "https://www.blista.de/Speiseplan-der-Mensa#page-content")!))
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
             activity.stopAnimating()
