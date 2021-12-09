@@ -23,14 +23,12 @@
 		2C5FA12122CE4916009145AB /* intranet.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C5FA12022CE4916009145AB /* intranet.pdf */; };
 		2C6186321FD680A100C8FCF1 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2C6186311FD680A100C8FCF1 /* Settings.bundle */; };
 		2C6186341FD6836D00C8FCF1 /* SettingsBundleHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */; };
-		2C68E3992313339A0059B2CA /* terminplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C68E398231333990059B2CA /* terminplan.pdf */; };
 		2C75DF5F1FDBB8EF00AC1A41 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */; };
 		2C75DF601FDBB8EF00AC1A41 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */; };
 		2C803AEE1FD0904D007A518B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C803AED1FD0904D007A518B /* Reachability.swift */; };
 		2C819163217FB66C0052E7C0 /* blista.png in Resources */ = {isa = PBXBuildFile; fileRef = 2C819162217FB66C0052E7C0 /* blista.png */; };
 		2C84E6CF1FD50E4800671FB3 /* FourteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C84E6CE1FD50E4800671FB3 /* FourteenthViewController.swift */; };
 		2C89C3071FD0F4A400D65F3D /* EighthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C89C3061FD0F4A400D65F3D /* EighthViewController.swift */; };
-		2C9227FA26E67A9600A29551 /* ferienordnung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C9227F926E67A9600A29551 /* ferienordnung.pdf */; };
 		2C933D161FD0D8A000290D4E /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C933D151FD0D8A000290D4E /* FifthViewController.swift */; };
 		2C933D181FD0E18800290D4E /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C933D171FD0E18800290D4E /* SixthViewController.swift */; };
 		2C933D1C1FD0EBA000290D4E /* SeventhViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C933D1B1FD0EBA000290D4E /* SeventhViewController.swift */; };
@@ -38,6 +36,8 @@
 		2C9834801FF311C40099A977 /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C98347F1FF311C40099A977 /* UserNotifications.framework */; };
 		2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2C9834821FF333520099A977 /* GoogleService-Info.plist */; };
 		2C99089020BAE17E0013A8F7 /* NineteenthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */; };
+		2C9E35052750CD4900A11FB6 /* ferienordnung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E35042750CD4900A11FB6 /* ferienordnung.pdf */; };
+		2C9E35072750CD5800A11FB6 /* terminplan.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2C9E35062750CD5800A11FB6 /* terminplan.pdf */; };
 		2CA914CC1FDC402A00EC3B02 /* imprint.html in Resources */ = {isa = PBXBuildFile; fileRef = 2CA914CA1FDC402A00EC3B02 /* imprint.html */; };
 		2CAAF1F9247094ED00E0C77D /* TwentysixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CAAF1F8247094ED00E0C77D /* TwentysixthViewController.swift */; };
 		2CB527CA26CCD0C500A02A89 /* wegbeschreibung.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 2CB527C926CCD0C500A02A89 /* wegbeschreibung.pdf */; };
@@ -91,14 +91,12 @@
 		2C5FA12022CE4916009145AB /* intranet.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = intranet.pdf; sourceTree = "<group>"; };
 		2C6186311FD680A100C8FCF1 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		2C6186331FD6836D00C8FCF1 /* SettingsBundleHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsBundleHelper.swift; sourceTree = "<group>"; };
-		2C68E398231333990059B2CA /* terminplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = terminplan.pdf; sourceTree = "<group>"; };
 		2C75DF5D1FDBB8EF00AC1A41 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = SOURCE_ROOT; };
 		2C75DF5E1FDBB8EF00AC1A41 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = SOURCE_ROOT; };
 		2C803AED1FD0904D007A518B /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		2C819162217FB66C0052E7C0 /* blista.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blista.png; sourceTree = "<group>"; };
 		2C84E6CE1FD50E4800671FB3 /* FourteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourteenthViewController.swift; sourceTree = "<group>"; };
 		2C89C3061FD0F4A400D65F3D /* EighthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EighthViewController.swift; sourceTree = "<group>"; };
-		2C9227F926E67A9600A29551 /* ferienordnung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ferienordnung.pdf; sourceTree = "<group>"; };
 		2C933D151FD0D8A000290D4E /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
 		2C933D171FD0E18800290D4E /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
 		2C933D1B1FD0EBA000290D4E /* SeventhViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeventhViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +105,8 @@
 		2C98347F1FF311C40099A977 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = System/Library/Frameworks/UserNotifications.framework; sourceTree = SDKROOT; };
 		2C9834821FF333520099A977 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2C99088F20BAE17E0013A8F7 /* NineteenthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NineteenthViewController.swift; sourceTree = "<group>"; };
+		2C9E35042750CD4900A11FB6 /* ferienordnung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = ferienordnung.pdf; sourceTree = "<group>"; };
+		2C9E35062750CD5800A11FB6 /* terminplan.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = terminplan.pdf; sourceTree = "<group>"; };
 		2CA914CA1FDC402A00EC3B02 /* imprint.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = imprint.html; sourceTree = "<group>"; };
 		2CAAF1F8247094ED00E0C77D /* TwentysixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwentysixthViewController.swift; sourceTree = "<group>"; };
 		2CB527C926CCD0C500A02A89 /* wegbeschreibung.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = wegbeschreibung.pdf; sourceTree = "<group>"; };
@@ -174,8 +174,8 @@
 				2CF4E78F1FCFCB3F00B29B8D /* Products */,
 				2C819162217FB66C0052E7C0 /* blista.png */,
 				2C3B6AF820AB2C5D002A3F5A /* opening.html */,
-				2C9227F926E67A9600A29551 /* ferienordnung.pdf */,
-				2C68E398231333990059B2CA /* terminplan.pdf */,
+				2C9E35042750CD4900A11FB6 /* ferienordnung.pdf */,
+				2C9E35062750CD5800A11FB6 /* terminplan.pdf */,
 				2CB527C926CCD0C500A02A89 /* wegbeschreibung.pdf */,
 				2C5FA12022CE4916009145AB /* intranet.pdf */,
 				2CE3EBC51FD64A2300DCE733 /* assets */,
@@ -329,14 +329,14 @@
 				2CE3EBC91FD64A2400DCE733 /* assets in Resources */,
 				2C5FA12122CE4916009145AB /* intranet.pdf in Resources */,
 				2CF4E79B1FCFCB3F00B29B8D /* Assets.xcassets in Resources */,
-				2C9227FA26E67A9600A29551 /* ferienordnung.pdf in Resources */,
 				2C9834831FF333520099A977 /* GoogleService-Info.plist in Resources */,
 				2C3B6AF920AB2C5D002A3F5A /* opening.html in Resources */,
 				2CC72DD71FE9CA28007F874E /* license.txt in Resources */,
 				2C4699BA2055BDC9003FA3FB /* fabric.apikey in Resources */,
 				2CB527CA26CCD0C500A02A89 /* wegbeschreibung.pdf in Resources */,
-				2C68E3992313339A0059B2CA /* terminplan.pdf in Resources */,
+				2C9E35072750CD5800A11FB6 /* terminplan.pdf in Resources */,
 				2CF4E7991FCFCB3F00B29B8D /* Main.storyboard in Resources */,
+				2C9E35052750CD4900A11FB6 /* ferienordnung.pdf in Resources */,
 				2CE3EBCB1FD64A2400DCE733 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -591,7 +591,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.21.1;
+				MARKETING_VERSION = 1.22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -621,7 +621,7 @@
 				INFOPLIST_FILE = blista/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 1.21.1;
+				MARKETING_VERSION = 1.22.0;
 				PRODUCT_BUNDLE_IDENTIFIER = de.zitrotec.blista;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
