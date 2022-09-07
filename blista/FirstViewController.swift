@@ -561,7 +561,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                            customAttributes: [:])
                     
                     DispatchQueue.main.async {
-                        webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                        webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4526#maincontent")!))
                     }
                     
                 case .cellular:
@@ -572,7 +572,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                            customAttributes: [:])
                     
                     DispatchQueue.main.async {
-                        webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                        webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4526#maincontent")!))
                     }
                     
                 case .none:
@@ -598,7 +598,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                        contentId: "vplan1",
                                        customAttributes: [:])
                 
-                webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4526#maincontent")!))
                 
             case .cellular:
                 
@@ -607,7 +607,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                        contentId: "vplan1",
                                        customAttributes: [:])
                 
-                webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=39#maincontent")!))
+                webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4526#maincontent")!))
                 
             case .none:
                 UIApplication.shared.isNetworkActivityIndicatorVisible = false
@@ -633,7 +633,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan1vorschau",
                                    customAttributes: [:])
             
-            webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=43#maincontent")!))
+            webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4527#maincontent")!))
             
         case .cellular:
             
@@ -642,7 +642,7 @@ class FirstViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan1vorschau",
                                    customAttributes: [:])
             
-            webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=43#maincontent")!))
+            webView1.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4527#maincontent")!))
             
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false

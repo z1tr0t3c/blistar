@@ -50,7 +50,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan2",
                                    customAttributes: [:])
             
-            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=41#maincontent")!))
+            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4525#maincontent")!))
             
         case .cellular:
             
@@ -59,7 +59,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan2",
                                    customAttributes: [:])
             
-            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=41#maincontent")!))
+            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4525#maincontent")!))
             
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
@@ -84,7 +84,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan2vorschau",
                                    customAttributes: [:])
             
-            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=45#maincontent")!))
+            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4528#maincontent")!))
             
         case .cellular:
             
@@ -93,7 +93,7 @@ class SecondViewController: UIViewController, UIWebViewDelegate {
                                    contentId: "vplan2vorschau",
                                    customAttributes: [:])
             
-            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=45#maincontent")!))
+            webView2.loadRequest(URLRequest(url: URL(string: "https://css.moodle.blista.study/mod/resource/view.php?id=4528#maincontent")!))
             
         case .none:
             UIApplication.shared.isNetworkActivityIndicatorVisible = false
